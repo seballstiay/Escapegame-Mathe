@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+.navbar{
+    position: relative;
+    width: 100%;
+    height: 9vh;
+    background-color: #5D4954;
+    display: flex;
+    justify-content: space-around;
+
+}
+.navHeader{
+    font-size: 2.7vh;
+    color: white;
+    padding-left: 2vw;
+    transform: translate(5%, 30%);
+}
+.navLinks {
+    display: flex;
+    justify-content: right;
+    width: 50%;
+    margin: auto;
+}
+.menu-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.menu-button-burger{
+    	width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+}
+.menu-button-burger::after, .menu-button-burger::before {
+    content:'';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.menu-button-burger::after{
+    transform: translateY(16px);
+}
+.menu-button-burger::before{
+    transform: translateY(-16px);
+}
+/* Burger - Animation */
+.menu-button.open .menu-button-burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+  .menu-button.open .menu-button-burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+    }
+  .menu-button.open .menu-button-burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+  
+.ifopen{
+    background-color: #5d495462;
+    padding-top: 1vh;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+}
+.Navliste{
+    line-height: 4vh;
+    text-decoration: none;
+}
