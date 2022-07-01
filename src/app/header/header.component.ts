@@ -6,18 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
   menuOpen = false;
 
-  constructor() {}
-
-  ngOnInit(): void {}
-
   togglemenu() {
-    if (!this.menuOpen) {
-      this.menuOpen = true;
-    } else {
-      this.menuOpen = false;
-    }
+    this.menuOpen = !this.menuOpen;
   }
 }
 /*
