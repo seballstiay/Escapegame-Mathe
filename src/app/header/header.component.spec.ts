@@ -1,23 +1,31 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component, OnInit } from '@angular/core';
 
-import { HeaderComponent } from './header.component';
+@Component({
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
+})
+export class HeaderComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+  menuOpen = false;
 
-describe('HeaderComponent', () => {
-  let component: HeaderComponent;
-  let fixture: ComponentFixture<HeaderComponent>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ HeaderComponent ]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(HeaderComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  togglemenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+}
+/*
+const menubtn= document.querySelector('.menu-button');
+let menuOpen = false;
+menubtn.addEventListener('click', () => {
+    if (!menuOpen){
+        menubtn.classList.add('open');
+        menuOpen = true;
+    }
+    else{
+        menubtn.classList.remove('open');
+        menuOpen = false;
+    }
 });
+*/

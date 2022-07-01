@@ -1,5 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-    padding: 0px;
-    margin: 0px;
+$minS: 16;
+$minV: 300;
+$maxS: 20;
+$maxV: 1924;
+
+$fontSize: calc(
+  #{$minS}px + (#{$maxS} - #{$minS}) *
+    ((100vw - #{$minV}px) / (#{$maxV} - #{$minV}))
+);
+$lineHeight: calc(#{$fontSize} * 1.5);
+$letterSpacing: calc(#{$fontSize} * 0.0015);
+$fontWeight: 300;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
 }

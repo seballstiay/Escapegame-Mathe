@@ -1,37 +1,21 @@
 <div class="navbar">
-  <div class="navHeader">
-    <h2>Mathematisches Escapegame</h2>
-  </div>
-  <div class="navLinks">
-    <div
-      class="menu-button"
-      (click)="togglemenu()"
-      [ngClass]="{ open: menuOpen }"
-    >
-      <div class="menu-button-burger"></div>
-    </div>
+  <h2>Mathematisches Escapegame</h2>
+  <div
+    class="menu-button"
+    (click)="togglemenu()"
+    [ngClass]="{ open: menuOpen }"
+  >
+    <div class="stripe stripeTop"></div>
+    <div class="stripe stripeMid"></div>
+    <div class="stripe stripeBottom"></div>
   </div>
 </div>
-<ul class="Navliste">
-  <div class="ifopen" *ngIf="menuOpen">
-    <li>
-      <a routerLink="/" id="home"> Home </a>
-    </li>
-    <li>
-      <a routerLink="/spielregeln" id="Spielregeln"> Spielregeln </a>
-    </li>
-    <li>
-      <a routerLink="/spiel-beitreten" id="Spiel beitreten">
-        Spiel beitreten
-      </a>
-    </li>
-    <li>
-      <a routerLink="/lehrer-panel" id="Lehrer-Panel"> Lehrer-Panel </a>
-    </li>
-    <li>
-      <a routerLink="/einfuehrung-lehrer" id="Einführung Lehrer">
-        Einführung Lehrer
-      </a>
-    </li>
-  </div>
-</ul>
+<div class="Navliste" [ngClass]="{ open: menuOpen }">
+  <a routerLink="/" id="home"> Home </a>
+  <a routerLink="/spielregeln" id="Spielregeln"> Spielregeln </a>
+  <a routerLink="/spiel-beitreten" id="Spiel beitreten"> Spiel beitreten </a>
+  <a routerLink="/lehrer-panel" id="Lehrer-Panel"> Lehrer-Panel </a>
+  <a routerLink="/einfuehrung-lehrer" id="Einführung Lehrer">
+    Einführung Lehrer
+  </a>
+</div>
