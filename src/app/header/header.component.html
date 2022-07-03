@@ -11,11 +11,21 @@
   </div>
 </div>
 <div class="Navliste" [ngClass]="{ open: menuOpen }">
-  <a routerLink="/" id="home"> Home </a>
-  <a routerLink="/spielregeln" id="Spielregeln"> Spielregeln </a>
-  <a routerLink="/spiel-beitreten" id="Spiel beitreten"> Spiel beitreten </a>
-  <a routerLink="/lehrer-panel" id="Lehrer-Panel"> Lehrer-Panel </a>
-  <a routerLink="/einfuehrung-lehrer" id="Einführung Lehrer">
+  <a routerLink="/" id="home" (click)="togglemenu()"> Home </a>
+  <a routerLink="/spielregeln" id="Spielregeln" (click)="togglemenu()">
+    Spielregeln
+  </a>
+  <a routerLink="/spiel-beitreten" id="Spiel beitreten" (click)="togglemenu()">
+    Spiel beitreten
+  </a>
+  <a routerLink="/lehrer-panel" id="Lehrer-Panel" (click)="togglemenu()">
+    Lehrer-Panel
+  </a>
+  <a
+    routerLink="/einfuehrung-lehrer"
+    id="Einführung Lehrer"
+    (click)="togglemenu()"
+  >
     Einführung Lehrer
   </a>
 </div>

@@ -1,19 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"');
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
+
 .navbar {
   width: 100%;
   height: 100%;
   padding: 1rem;
-  background-color: #5d4954;
+  background-image: linear-gradient(45deg, #110e40 35%, #431b4a 45%),
+    linear-gradient(black, #431b4a);
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   h2 {
-    font-size: 1.4rem;
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: lighter;
     color: white;
   }
 }
@@ -60,19 +66,20 @@ $transitionDuration: 0.5s;
 
 .Navliste {
   display: flex;
+  position: absolute;
+  width: 100%;
   flex-direction: column;
-  background-color: #5d495462;
+  // background-color: #5d495462;
+  background-color: #110e40;
   max-height: 0;
   opacity: 0;
-  padding-top: 3px;
-  padding-bottom: 10px;
   pointer-events: none;
   text-align: center;
   overflow: hidden;
   transition: all $transitionDuration ease-in-out;
 
   a {
-    color: black;
+    color: white;
     text-decoration: none;
     margin-top: 7px;
     font-size: 1rem;
@@ -84,6 +91,8 @@ $transitionDuration: 0.5s;
 
 .Navliste.open {
   max-height: 250px;
+  padding-top: 3px;
+  padding-bottom: 10px;
   opacity: 1;
   pointer-events: all;
 }

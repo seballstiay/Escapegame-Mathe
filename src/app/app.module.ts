@@ -10,6 +10,7 @@ import { SpielregelnComponent } from './spielregeln/spielregeln.component';
 import { LehrerPanelComponent } from './lehrer-panel/lehrer-panel.component';
 import { EinfuehrunglehrerComponent } from './einfuehrunglehrer/einfuehrunglehrer.component';
 import { FooterComponent } from './footer/footer.component';
+import { Aufgabe1Component } from './aufgabe1/aufgabe1.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './footer/footer.component';
     SpielregelnComponent,
     LehrerPanelComponent,
     EinfuehrunglehrerComponent,
-    FooterComponent
+    FooterComponent,
+    Aufgabe1Component
   ],
   imports: [
     BrowserModule,
