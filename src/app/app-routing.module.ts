@@ -5,7 +5,8 @@ import { SpielBeitretenComponent } from './spiel-beitreten/spiel-beitreten.compo
 import { SpielregelnComponent } from './spielregeln/spielregeln.component';
 import { LehrerPanelComponent } from './lehrer-panel/lehrer-panel.component';
 import { EinfuehrunglehrerComponent } from './einfuehrunglehrer/einfuehrunglehrer.component';
-import { Aufgabe1Component } from './aufgabe1/aufgabe1.component';
+import { Aufgabe1Component } from './Aufgaben/aufgabe1/aufgabe1.component';
+import { Aufgabe2Component } from './Aufgaben/aufgabe2/aufgabe2.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,14 @@ const routes: Routes = [
   {
     path: 'einfuehrung-lehrer',
     component: EinfuehrunglehrerComponent
+  },
+  {
+    path: 'aufgabe1',
+    component: Aufgabe1Component
+  },
+  {
+    path: 'aufgabe2',
+    component: Aufgabe2Component
   }
 ];
 
