@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { Aufgabe1Component } from './Aufgaben/aufgabe1/aufgabe1.component';
 import { Aufgabe2Component } from './Aufgaben/aufgabe2/aufgabe2.component';
+import { Aufgabe3Component } from './Aufgaben/aufgabe3/aufgabe3.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { Aufgabe2Component } from './Aufgaben/aufgabe2/aufgabe2.component';
     EinfuehrunglehrerComponent,
     FooterComponent,
     Aufgabe1Component,
-    Aufgabe2Component
+    Aufgabe2Component,
+    Aufgabe3Component
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],

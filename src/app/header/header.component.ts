@@ -20,17 +20,3 @@ export class HeaderComponent implements OnInit {
     }
   }
 }
-/*
-const menubtn= document.querySelector('.menu-button');
-let menuOpen = false;
-menubtn.addEventListener('click', () => {
-    if (!menuOpen){
-        menubtn.classList.add('open');
-        menuOpen = true;
-    }
-    else{
-        menubtn.classList.remove('open');
-        menuOpen = false;
-    }
-});
-*/

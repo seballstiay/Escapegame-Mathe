@@ -8,8 +8,14 @@ import { Router, RouterLink } from '@angular/router';
 })
 export class Aufgabe1Component implements OnInit {
   constructor(private router: Router) {}
+
   $a = 0;
   inputWert = '';
+  hinweise = {
+    0: false,
+    1: false,
+    2: false
+  };
   //Hier kommt das richtige Ergebnis der Aufgabe hin
   $Antwort = 'a';
 
@@ -22,18 +28,15 @@ export class Aufgabe1Component implements OnInit {
       console.log('Dieses Ergebnis ist flasch');
       this.$a++;
       console.log(this.$a);
-      if (this.$a >= 3) {
-        //Hinweis 1
-        console.log('Hinweis 1');
-        if (this.$a >= 4) {
-          //Hinweis 2
-          console.log('Hinweis 2');
-          if (this.$a >= 5) {
-            //Hinweis 3
-            console.log('Hinweis 3');
-          }
-        }
+      const a = this.$a - 3;
+
+      if (a >= 0 && a <= 2) {
+        this.toggleHinweis(a as 0 | 1 | 2);
       }
     }
+  }
+
+  toggleHinweis(h: 0 | 1 | 2) {
+    this.hinweise[h] = !this.hinweise[h];
   }
 }
