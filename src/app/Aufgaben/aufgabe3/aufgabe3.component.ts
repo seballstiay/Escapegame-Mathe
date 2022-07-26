@@ -7,6 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Aufgabe3Component implements OnInit {
   constructor() {}
+  $antwort = 1;
 
   ngOnInit(): void {}
+
+  pruefen() {
+    const options = document.getElementsByName(
+      'i'
+    ) as NodeListOf<HTMLInputElement>;
+
+    if (options[1].checked) {
+      //redirecten
+      alert('Richtige Antwort');
+    } else {
+      alert('Falsche Antwort');
+    }
+  }
 }

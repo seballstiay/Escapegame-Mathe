@@ -12,3 +12,6 @@
   <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
   <button (click)="pruefen()">Prüfen</button>
 </div>
+<div class="hinweis" [ngClass]="getClasses(0)">Hinweis 1</div>
+<div class="hinweis" [ngClass]="getClasses(1)">Hinweis 2</div>
+<div class="hinweis" [ngClass]="getClasses(2)">Hinweis 3</div>

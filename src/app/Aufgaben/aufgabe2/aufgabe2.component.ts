@@ -17,7 +17,7 @@ export class Aufgabe2Component implements OnInit {
 
   pruefen() {
     if (this.inputWert === this.$Antwort) {
-      this.router.navigate(['/aufgabe1']);
+      this.router.navigate(['/aufgabe3']);
     } else {
       console.log('Dieses Ergebnis ist flasch');
       this.$a++;

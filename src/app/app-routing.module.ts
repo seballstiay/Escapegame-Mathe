@@ -7,6 +7,7 @@ import { LehrerPanelComponent } from './lehrer-panel/lehrer-panel.component';
 import { EinfuehrunglehrerComponent } from './einfuehrunglehrer/einfuehrunglehrer.component';
 import { Aufgabe1Component } from './Aufgaben/aufgabe1/aufgabe1.component';
 import { Aufgabe2Component } from './Aufgaben/aufgabe2/aufgabe2.component';
+import { Aufgabe3Component } from './Aufgaben/aufgabe3/aufgabe3.component';
 
 const routes: Routes = [
   {
@@ -36,7 +37,8 @@ const routes: Routes = [
   {
     path: 'aufgabe2',
     component: Aufgabe2Component
-  }
+  },
+  { path: 'aufgabe3', component: Aufgabe3Component }
 ];
 
 @NgModule({

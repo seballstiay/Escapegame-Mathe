@@ -17,17 +17,16 @@ export class Aufgabe1Component implements OnInit {
     2: false
   };
   //Hier kommt das richtige Ergebnis der Aufgabe hin
-  $Antwort = 'a';
+  $antwort = 'a';
 
   ngOnInit(): void {}
 
   pruefen() {
-    if (this.inputWert === this.$Antwort) {
+    if (this.inputWert === this.$antwort) {
       this.router.navigate(['/aufgabe2']);
     } else {
       console.log('Dieses Ergebnis ist flasch');
       this.$a++;
-      console.log(this.$a);
       const a = this.$a - 3;
 
       if (a >= 0 && a <= 2) {
@@ -38,5 +37,10 @@ export class Aufgabe1Component implements OnInit {
 
   toggleHinweis(h: 0 | 1 | 2) {
     this.hinweise[h] = !this.hinweise[h];
+  }
+
+  getClasses(id: 0 | 1 | 2) {
+    console.log('is called: ', this.hinweise[id]);
+    return { show: this.hinweise[id] };
   }
 }
