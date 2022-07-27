@@ -16,6 +16,7 @@ import { Aufgabe2Component } from './Aufgaben/aufgabe2/aufgabe2.component';
 import { Aufgabe3Component } from './Aufgaben/aufgabe3/aufgabe3.component';
 import { Teil1Component } from './_Story/teil1/teil1.component';
 import { Teil2Component } from './_Story/teil2/teil2.component';
+import { NavigationAufgabenComponent } from './navigation-aufgaben/navigation-aufgaben.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { Teil2Component } from './_Story/teil2/teil2.component';
     Aufgabe2Component,
     Aufgabe3Component,
     Teil1Component,
-    Teil2Component
+    Teil2Component,
+    NavigationAufgabenComponent
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],
