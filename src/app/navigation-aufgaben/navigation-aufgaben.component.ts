@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { Location } from '@angular/common';
 
@@ -8,6 +8,9 @@ import { Location } from '@angular/common';
   styleUrls: ['./navigation-aufgaben.component.scss']
 })
 export class NavigationAufgabenComponent implements OnInit {
+  @Input()
+  showNextButton = true;
+
   constructor(private router: Router, private location: Location) {}
 
   ngOnInit(): void {}

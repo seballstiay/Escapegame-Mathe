@@ -1,11 +1,11 @@
 .navigation {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 1rem 1rem;
+  justify-content: space-around;
+  margin: 2rem 2rem;
   button {
-    width: 15%;
+    width: 35%;
     border-style: none;
     padding: 0.5rem;
+    background-color: gray;
   }
 }
