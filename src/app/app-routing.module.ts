@@ -11,6 +11,14 @@ import { Aufgabe3Component } from './Aufgaben/aufgabe3/aufgabe3.component';
 import { Aufgabe4Component } from './Aufgaben/aufgabe4/aufgabe4.component';
 import { Teil1Component } from './_Story/teil1/teil1.component';
 import { Teil2Component } from './_Story/teil2/teil2.component';
+import { Teil3Component } from './_Story/teil3/teil3.component';
+import { Teil4Component } from './_Story/teil4/teil4.component';
+import { Teil5Component } from './_Story/teil5/teil5.component';
+import { Teil6Component } from './_Story/teil6/teil6.component';
+import { Teil7Component } from './_Story/teil7/teil7.component';
+import { Aufgabe5Component } from './Aufgaben/aufgabe5/aufgabe5.component';
+import { Aufgabe6Component } from './Aufgaben/aufgabe6/aufgabe6.component';
+import { Aufgabe7Component } from './Aufgaben/aufgabe7/aufgabe7.component';
 
 const routes: Routes = [
   {
@@ -50,12 +58,45 @@ const routes: Routes = [
     component: Aufgabe4Component
   },
   {
+    path: 'aufgabe5',
+    component: Aufgabe5Component
+  },
+  {
+    path: 'aufgabe6',
+    component: Aufgabe6Component
+  },
+  {
+    path: 'aufgabe7',
+    component: Aufgabe7Component
+  },
+  {
     path: 'storyteil1',
     component: Teil1Component
   },
   {
     path: 'storyteil2',
     component: Teil2Component
+  },
+  {
+    path: 'storyteil3',
+    component: Teil3Component
+  },
+  {
+    path: 'storyteil4',
+    component: Teil4Component
+  },
+  {
+    path: 'storyteil5',
+    component: Teil5Component
+  },
+  {
+    path: 'storyteil6',
+    component: Teil6Component
+  },
+
+  {
+    path: 'storyteil7',
+    component: Teil7Component
   }
 ];
 

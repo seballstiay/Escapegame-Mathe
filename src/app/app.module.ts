@@ -18,6 +18,14 @@ import { Teil1Component } from './_Story/teil1/teil1.component';
 import { Teil2Component } from './_Story/teil2/teil2.component';
 import { NavigationAufgabenComponent } from './navigation-aufgaben/navigation-aufgaben.component';
 import { Aufgabe4Component } from './Aufgaben/aufgabe4/aufgabe4.component';
+import { Teil3Component } from './_Story/teil3/teil3.component';
+import { Teil4Component } from './_Story/teil4/teil4.component';
+import { Teil5Component } from './_Story/teil5/teil5.component';
+import { Teil6Component } from './_Story/teil6/teil6.component';
+import { Teil7Component } from './_Story/teil7/teil7.component';
+import { Aufgabe5Component } from './Aufgaben/aufgabe5/aufgabe5.component';
+import { Aufgabe6Component } from './Aufgaben/aufgabe6/aufgabe6.component';
+import { Aufgabe7Component } from './Aufgaben/aufgabe7/aufgabe7.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +43,15 @@ import { Aufgabe4Component } from './Aufgaben/aufgabe4/aufgabe4.component';
     Teil1Component,
     Teil2Component,
     NavigationAufgabenComponent,
-    Aufgabe4Component
+    Aufgabe4Component,
+    Teil3Component,
+    Teil4Component,
+    Teil5Component,
+    Teil6Component,
+    Teil7Component,
+    Aufgabe5Component,
+    Aufgabe6Component,
+    Aufgabe7Component
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],
