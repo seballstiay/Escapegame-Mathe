@@ -8,6 +8,7 @@ import { EinfuehrunglehrerComponent } from './einfuehrunglehrer/einfuehrunglehre
 import { Aufgabe1Component } from './Aufgaben/aufgabe1/aufgabe1.component';
 import { Aufgabe2Component } from './Aufgaben/aufgabe2/aufgabe2.component';
 import { Aufgabe3Component } from './Aufgaben/aufgabe3/aufgabe3.component';
+import { Aufgabe4Component } from './Aufgaben/aufgabe4/aufgabe4.component';
 import { Teil1Component } from './_Story/teil1/teil1.component';
 
 const routes: Routes = [
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'aufgabe3',
     component: Aufgabe3Component
+  },
+  {
+    path: 'aufgabe4',
+    component: Aufgabe4Component
   },
   {
     path: 'storyteil1',

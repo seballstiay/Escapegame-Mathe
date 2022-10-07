@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-aufgabe3',
@@ -6,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aufgabe3.component.scss']
 })
 export class Aufgabe3Component implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
+
+  $a = 0;
+  inputWert = '';
+  hinweise = {
+    0: false,
+    1: false,
+    2: false
+  };
+  //hier kommt das richtige Ergebnis hin
   $antwort = 1;
 
   ngOnInit(): void {}
@@ -17,10 +27,23 @@ export class Aufgabe3Component implements OnInit {
     ) as NodeListOf<HTMLInputElement>;
 
     if (options[1].checked) {
-      //redirecten
-      alert('Richtige Antwort');
+      this.router.navigate(['/aufgabe4']);
     } else {
-      alert('Falsche Antwort');
+      console.log('Dieses Ergebnis ist flasch');
+      this.$a++;
+      const a = this.$a - 3;
+
+      if (a >= 0 && a <= 2) {
+        this.toggleHinweis(a as 0 | 1 | 2);
+      }
     }
+  }
+  toggleHinweis(h: 0 | 1 | 2) {
+    this.hinweise[h] = !this.hinweise[h];
+  }
+
+  getClasses(id: 0 | 1 | 2) {
+    console.log('is called: ', this.hinweise[id]);
+    return { show: this.hinweise[id] };
   }
 }

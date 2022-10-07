@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-aufgabe2',
-  templateUrl: './aufgabe2.component.html',
-  styleUrls: ['./aufgabe2.component.scss']
+  selector: 'app-aufgabe4',
+  templateUrl: './aufgabe4.component.html',
+  styleUrls: ['./aufgabe4.component.scss']
 })
-export class Aufgabe2Component implements OnInit {
+export class Aufgabe4Component implements OnInit {
   constructor(private router: Router) {}
 
   $a = 0;
@@ -17,13 +17,13 @@ export class Aufgabe2Component implements OnInit {
     2: false
   };
   //Hier kommt das richtige Ergebnis der Aufgabe hin
-  $antwort = '1999';
+  $antwort = '2g';
 
   ngOnInit(): void {}
 
   pruefen() {
     if (this.inputWert === this.$antwort) {
-      this.router.navigate(['/aufgabe3']);
+      this.router.navigate(['/aufgabe2']);
     } else {
       console.log('Dieses Ergebnis ist flasch');
       this.$a++;
