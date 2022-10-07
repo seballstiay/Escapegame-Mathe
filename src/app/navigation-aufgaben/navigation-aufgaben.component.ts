@@ -11,13 +11,17 @@ export class NavigationAufgabenComponent implements OnInit {
   @Input()
   showNextButton = true;
 
+  @Input()
+  link = '';
+
   constructor(private router: Router, private location: Location) {}
 
   ngOnInit(): void {}
 
   weiter() {
-    this.router.navigate(['/aufgabe1']);
+    this.router.navigate([this.link]);
   }
+
   back() {
     this.location.back();
   }

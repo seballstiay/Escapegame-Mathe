@@ -10,6 +10,7 @@ import { Aufgabe2Component } from './Aufgaben/aufgabe2/aufgabe2.component';
 import { Aufgabe3Component } from './Aufgaben/aufgabe3/aufgabe3.component';
 import { Aufgabe4Component } from './Aufgaben/aufgabe4/aufgabe4.component';
 import { Teil1Component } from './_Story/teil1/teil1.component';
+import { Teil2Component } from './_Story/teil2/teil2.component';
 
 const routes: Routes = [
   {
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path: 'storyteil1',
     component: Teil1Component
+  },
+  {
+    path: 'storyteil2',
+    component: Teil2Component
   }
 ];
 
