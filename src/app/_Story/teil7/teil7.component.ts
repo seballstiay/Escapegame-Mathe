@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterLink, RouterModule } from '@angular/router';
 import { Location } from '@angular/common';
-
 @Component({
-  selector: 'app-teil2',
-  templateUrl: './teil2.component.html',
-  styleUrls: ['./teil2.component.scss']
+  selector: 'app-teil7',
+  templateUrl: './teil7.component.html',
+  styleUrls: ['./teil7.component.scss']
 })
-export class Teil2Component implements OnInit {
+export class Teil7Component implements OnInit {
   constructor(private router: Router, private location: Location) {}
 
   ngOnInit(): void {}
