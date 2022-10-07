@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
-
 @Component({
   selector: 'app-aufgabe1',
   templateUrl: './aufgabe1.component.html',

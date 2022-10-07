@@ -5,7 +5,7 @@ import { Router, RouterLink } from '@angular/router';
   templateUrl: './aufgabe6.component.html',
   styleUrls: ['./aufgabe6.component.scss']
 })
-export class Aufgabe1Component implements OnInit {
+export class Aufgabe6Component implements OnInit {
   constructor(private router: Router) {}
 
   $a = 0;
@@ -22,7 +22,7 @@ export class Aufgabe1Component implements OnInit {
 
   pruefen() {
     if (this.inputWert === this.$antwort) {
-      this.router.navigate(['/storyteil2']);
+      this.router.navigate(['/storyteil7']);
     } else {
       console.log('Dieses Ergebnis ist flasch');
       this.$a++;
