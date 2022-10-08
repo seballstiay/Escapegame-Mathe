@@ -23,7 +23,7 @@ export class Aufgabe4Component implements OnInit {
 
   pruefen() {
     if (this.inputWert === this.$antwort) {
-      this.router.navigate(['/2storyteil5']);
+      this.router.navigate(['/storyteil5']);
     } else {
       console.log('Dieses Ergebnis ist flasch');
       this.$a++;

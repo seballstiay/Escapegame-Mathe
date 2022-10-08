@@ -32,6 +32,13 @@ import { A2aufgabe4Component } from './Aufgaben2/a2aufgabe4/a2aufgabe4.component
 import { A2aufgabe5Component } from './Aufgaben2/a2aufgabe5/a2aufgabe5.component';
 import { A2aufgabe6Component } from './Aufgaben2/a2aufgabe6/a2aufgabe6.component';
 import { A2aufgabe7Component } from './Aufgaben2/a2aufgabe7/a2aufgabe7.component';
+import { A3aufgabe1Component } from './Aufgaben3/a3aufgabe1/a3aufgabe1.component';
+import { A3aufgabe2Component } from './Aufgaben3/a3aufgabe2/a3aufgabe2.component';
+import { A3aufgabe3Component } from './Aufgaben3/a3aufgabe3/a3aufgabe3.component';
+import { A3aufgabe4Component } from './Aufgaben3/a3aufgabe4/a3aufgabe4.component';
+import { A3aufgabe5Component } from './Aufgaben3/a3aufgabe5/a3aufgabe5.component';
+import { A3aufgabe6Component } from './Aufgaben3/a3aufgabe6/a3aufgabe6.component';
+import { A3aufgabe7Component } from './Aufgaben3/a3aufgabe7/a3aufgabe7.component';
 import { Teil1Component } from './_Story/teil1/teil1.component';
 import { Teil2Component } from './_Story/teil2/teil2.component';
 import { Teil3Component } from './_Story/teil3/teil3.component';
@@ -53,6 +60,13 @@ import { S2teil4Component } from './_Story2/s2teil4/s2teil4.component';
 import { S2teil5Component } from './_Story2/s2teil5/s2teil5.component';
 import { S2teil6Component } from './_Story2/s2teil6/s2teil6.component';
 import { S2teil7Component } from './_Story2/s2teil7/s2teil7.component';
+import { S3teil1Component } from './_Story3/s3teil1/s3teil1.component';
+import { S3teil2Component } from './_Story3/s3teil2/s3teil2.component';
+import { S3teil3Component } from './_Story3/s3teil3/s3teil3.component';
+import { S3teil4Component } from './_Story3/s3teil4/s3teil4.component';
+import { S3teil5Component } from './_Story3/s3teil5/s3teil5.component';
+import { S3teil6Component } from './_Story3/s3teil6/s3teil6.component';
+import { S3teil7Component } from './_Story3/s3teil7/s3teil7.component';
 
 @NgModule({
   declarations: [
@@ -106,7 +120,21 @@ import { S2teil7Component } from './_Story2/s2teil7/s2teil7.component';
     A2aufgabe4Component,
     A2aufgabe5Component,
     A2aufgabe6Component,
-    A2aufgabe7Component
+    A2aufgabe7Component,
+    A3aufgabe1Component,
+    A3aufgabe2Component,
+    A3aufgabe3Component,
+    A3aufgabe4Component,
+    A3aufgabe5Component,
+    A3aufgabe6Component,
+    A3aufgabe7Component,
+    S3teil1Component,
+    S3teil2Component,
+    S3teil3Component,
+    S3teil4Component,
+    S3teil5Component,
+    S3teil6Component,
+    S3teil7Component
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],

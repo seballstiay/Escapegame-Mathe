@@ -1,1 +1,33 @@
-<p>a1aufgabe7 works!</p>
+<h1>Aufgabe 7</h1>
+<div class="Bild">
+  <img src="\assets\Beispiel.jpg" alt="" />
+</div>
+
+<div class="Aufgabentext">
+  Um wie viel Gramm ist das Lachen leichter/schwerer als die Liebe, angenommen
+  die Liebe wiegt 1 g und die obige Waage ist ausgeglichen?
+</div>
+<div class="Eingabe">
+  <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
+  <button (click)="pruefen()">Prüfen</button>
+</div>
+<div class="hinweisContainer">
+  <div class="hinweis" [ngClass]="getClasses(0)">
+    <h3>Hinweis 1</h3>
+    <p>
+      Setze beide Seiten der Waage in einer Gleichung gleich. Eine Seite der
+      Waage entspricht einer Seite der Gleichung.
+    </p>
+  </div>
+  <div class="hinweis" [ngClass]="getClasses(1)">
+    <h3>Hinweis 2</h3>
+    <p>Lachen ist/sind x g und Liebe ist 1g. Erweitere deine Gleichung!</p>
+  </div>
+  <div class="hinweis" [ngClass]="getClasses(2)">
+    <h3>Hinweis 3</h3>
+    <p>
+      Die Gleichung ist 10x + 3 = 8x + 9, führe die Äquivalenzumformung durch!
+    </p>
+  </div>
+</div>
+<app-navigation-aufgaben [showNextButton]="false"></app-navigation-aufgaben>

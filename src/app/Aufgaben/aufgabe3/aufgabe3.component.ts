@@ -27,7 +27,7 @@ export class Aufgabe3Component implements OnInit {
     ) as NodeListOf<HTMLInputElement>;
 
     if (options[1].checked) {
-      this.router.navigate(['/2storyteil4']);
+      this.router.navigate(['/storyteil4']);
     } else {
       console.log('Dieses Ergebnis ist flasch');
       this.$a++;

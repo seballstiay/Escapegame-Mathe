@@ -1,6 +1,6 @@
 <div class="background">
   <div>
-    <H1> Wähle eine Storyline: </H1>
+    <H1 *ngIf="finished() == false"> Wähle eine Storyline: </H1>
   </div>
   <div class="Storycontainer">
     <button class="story1" (click)="story1()" *ngIf="story1Aktiviert()">
@@ -14,6 +14,9 @@
     <button class="story3" (click)="story3()" *ngIf="story3Aktiviert()">
       <h3>Story 3</h3>
       <p>Du fliegst durch ein grünes Wurmloch.</p>
+    </button>
+    <button class="Finish" *ngIf="finished()">
+      <p>Ob das wohl das letzte Wurmloch ist?</p>
     </button>
   </div>
 </div>
