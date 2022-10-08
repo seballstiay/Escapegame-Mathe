@@ -12,13 +12,13 @@ import { Aufgabe4Component } from './Aufgaben/aufgabe4/aufgabe4.component';
 import { Aufgabe5Component } from './Aufgaben/aufgabe5/aufgabe5.component';
 import { Aufgabe6Component } from './Aufgaben/aufgabe6/aufgabe6.component';
 import { Aufgabe7Component } from './Aufgaben/aufgabe7/aufgabe7.component';
-import { Teil1Component } from './_Story2/teil1/teil1.component';
-import { Teil2Component } from './_Story2/teil2/teil2.component';
-import { Teil3Component } from './_Story2/teil3/teil3.component';
-import { Teil4Component } from './_Story2/teil4/teil4.component';
-import { Teil5Component } from './_Story2/teil5/teil5.component';
-import { Teil6Component } from './_Story2/teil6/teil6.component';
-import { Teil7Component } from './_Story2/teil7/teil7.component';
+import { Teil1Component } from './_Story/teil1/teil1.component';
+import { Teil2Component } from './_Story/teil2/teil2.component';
+import { Teil3Component } from './_Story/teil3/teil3.component';
+import { Teil4Component } from './_Story/teil4/teil4.component';
+import { Teil5Component } from './_Story/teil5/teil5.component';
+import { Teil6Component } from './_Story/teil6/teil6.component';
+import { Teil7Component } from './_Story/teil7/teil7.component';
 
 const routes: Routes = [
   {
@@ -70,61 +70,32 @@ const routes: Routes = [
     component: Aufgabe7Component
   },
   {
-    path: '2storyteil1',
+    path: 'storyteil1',
     component: Teil1Component
   },
   {
-    path: '2storyteil2',
+    path: 'storyteil2',
     component: Teil2Component
   },
   {
-    path: '2storyteil3',
+    path: 'storyteil3',
     component: Teil3Component
   },
   {
-    path: '2storyteil4',
+    path: 'storyteil4',
     component: Teil4Component
   },
   {
-    path: '2storyteil5',
+    path: 'storyteil5',
     component: Teil5Component
   },
   {
-    path: '2storyteil6',
+    path: 'storyteil6',
     component: Teil6Component
   },
 
   {
-    path: '2storyteil7',
-    component: Teil7Component
-  },
-  {
-    path: '3storyteil1',
-    component: 3Teil1Component
-  },
-  {
-    path: '3storyteil2',
-    component: 3Teil2Component
-  },
-  {
-    path: '3storyteil3',
-    component: 3Teil3Component
-  },
-  {
-    path: '3storyteil4',
-    component: 3Teil4Component
-  },
-  {
-    path: '3storyteil5',
-    component: 3Teil5Component
-  },
-  {
-    path: '3storyteil6',
-    component: 3Teil6Component
-  },
-
-  {
-    path: '2storyteil7',
+    path: 'storyteil7',
     component: Teil7Component
   }
 ];
