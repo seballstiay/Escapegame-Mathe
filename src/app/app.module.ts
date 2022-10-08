@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -11,21 +10,49 @@ import { LehrerPanelComponent } from './lehrer-panel/lehrer-panel.component';
 import { EinfuehrunglehrerComponent } from './einfuehrunglehrer/einfuehrunglehrer.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { NavigationAufgabenComponent } from './navigation-aufgaben/navigation-aufgaben.component';
 import { Aufgabe1Component } from './Aufgaben/aufgabe1/aufgabe1.component';
 import { Aufgabe2Component } from './Aufgaben/aufgabe2/aufgabe2.component';
 import { Aufgabe3Component } from './Aufgaben/aufgabe3/aufgabe3.component';
+import { Aufgabe4Component } from './Aufgaben/aufgabe4/aufgabe4.component';
+import { Aufgabe5Component } from './Aufgaben/aufgabe5/aufgabe5.component';
+import { Aufgabe6Component } from './Aufgaben/aufgabe6/aufgabe6.component';
+import { Aufgabe7Component } from './Aufgaben/aufgabe7/aufgabe7.component';
+import { A1aufgabe1Component } from './Aufgaben1/a1aufgabe1/a1aufgabe1.component';
+import { A1aufgabe2Component } from './Aufgaben1/a1aufgabe2/a1aufgabe2.component';
+import { A1aufgabe3Component } from './Aufgaben1/a1aufgabe3/a1aufgabe3.component';
+import { A1aufgabe4Component } from './Aufgaben1/a1aufgabe4/a1aufgabe4.component';
+import { A1aufgabe5Component } from './Aufgaben1/a1aufgabe5/a1aufgabe5.component';
+import { A1aufgabe6Component } from './Aufgaben1/a1aufgabe6/a1aufgabe6.component';
+import { A1aufgabe7Component } from './Aufgaben1/a1aufgabe7/a1aufgabe7.component';
+import { A2aufgabe1Component } from './Aufgaben2/a2aufgabe1/a2aufgabe1.component';
+import { A2aufgabe2Component } from './Aufgaben2/a2aufgabe2/a2aufgabe2.component';
+import { A2aufgabe3Component } from './Aufgaben2/a2aufgabe3/a2aufgabe3.component';
+import { A2aufgabe4Component } from './Aufgaben2/a2aufgabe4/a2aufgabe4.component';
+import { A2aufgabe5Component } from './Aufgaben2/a2aufgabe5/a2aufgabe5.component';
+import { A2aufgabe6Component } from './Aufgaben2/a2aufgabe6/a2aufgabe6.component';
+import { A2aufgabe7Component } from './Aufgaben2/a2aufgabe7/a2aufgabe7.component';
 import { Teil1Component } from './_Story/teil1/teil1.component';
 import { Teil2Component } from './_Story/teil2/teil2.component';
-import { NavigationAufgabenComponent } from './navigation-aufgaben/navigation-aufgaben.component';
-import { Aufgabe4Component } from './Aufgaben/aufgabe4/aufgabe4.component';
 import { Teil3Component } from './_Story/teil3/teil3.component';
 import { Teil4Component } from './_Story/teil4/teil4.component';
 import { Teil5Component } from './_Story/teil5/teil5.component';
 import { Teil6Component } from './_Story/teil6/teil6.component';
 import { Teil7Component } from './_Story/teil7/teil7.component';
-import { Aufgabe5Component } from './Aufgaben/aufgabe5/aufgabe5.component';
-import { Aufgabe6Component } from './Aufgaben/aufgabe6/aufgabe6.component';
-import { Aufgabe7Component } from './Aufgaben/aufgabe7/aufgabe7.component';
+import { S1teil1Component } from './_Story1/s1teil1/s1teil1.component';
+import { S1teil2Component } from './_Story1/s1teil2/s1teil2.component';
+import { S1teil3Component } from './_Story1/s1teil3/s1teil3.component';
+import { S1teil4Component } from './_Story1/s1teil4/s1teil4.component';
+import { S1teil5Component } from './_Story1/s1teil5/s1teil5.component';
+import { S1teil6Component } from './_Story1/s1teil6/s1teil6.component';
+import { S1teil7Component } from './_Story1/s1teil7/s1teil7.component';
+import { S2teil1Component } from './_Story2/s2teil1/s2teil1.component';
+import { S2teil2Component } from './_Story2/s2teil2/s2teil2.component';
+import { S2teil3Component } from './_Story2/s2teil3/s2teil3.component';
+import { S2teil4Component } from './_Story2/s2teil4/s2teil4.component';
+import { S2teil5Component } from './_Story2/s2teil5/s2teil5.component';
+import { S2teil6Component } from './_Story2/s2teil6/s2teil6.component';
+import { S2teil7Component } from './_Story2/s2teil7/s2teil7.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +78,35 @@ import { Aufgabe7Component } from './Aufgaben/aufgabe7/aufgabe7.component';
     Teil7Component,
     Aufgabe5Component,
     Aufgabe6Component,
-    Aufgabe7Component
+    Aufgabe7Component,
+    S1teil1Component,
+    S1teil2Component,
+    S1teil3Component,
+    S1teil4Component,
+    S1teil5Component,
+    S1teil6Component,
+    S1teil7Component,
+    S2teil1Component,
+    S2teil2Component,
+    S2teil3Component,
+    S2teil4Component,
+    S2teil5Component,
+    S2teil6Component,
+    S2teil7Component,
+    A1aufgabe1Component,
+    A1aufgabe2Component,
+    A1aufgabe3Component,
+    A1aufgabe4Component,
+    A1aufgabe5Component,
+    A1aufgabe6Component,
+    A1aufgabe7Component,
+    A2aufgabe1Component,
+    A2aufgabe2Component,
+    A2aufgabe3Component,
+    A2aufgabe4Component,
+    A2aufgabe5Component,
+    A2aufgabe6Component,
+    A2aufgabe7Component
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [],

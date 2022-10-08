@@ -13,7 +13,7 @@ export class SpielBeitretenComponent implements OnInit {
 
   story1() {
     localStorage.setItem('story1', 'true');
-    this.router.navigate(['/1storyteil1']);
+    this.router.navigate(['/s1teil1']);
   }
 
   story2() {
@@ -23,7 +23,7 @@ export class SpielBeitretenComponent implements OnInit {
 
   story3() {
     localStorage.setItem('story3', 'true');
-    this.router.navigate(['/3storyteil1']);
+    this.router.navigate(['/s2teil1']);
   }
 
   story1Aktiviert() {
