@@ -10,6 +10,8 @@ import { Location } from '@angular/common';
 export class NavigationAufgabenComponent implements OnInit {
   @Input()
   showNextButton = true;
+  @Input()
+  showBackButton = true;
 
   @Input()
   link = '';

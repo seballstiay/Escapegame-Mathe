@@ -1,6 +1,19 @@
 <div class="background">
-  <div class="container">
-    <p>spiel-beitreten works!</p>
-    <button routerLink="/storyteil1">Test</button>
+  <div>
+    <H1> Wähle eine Storyline: </H1>
+  </div>
+  <div class="Storycontainer">
+    <button class="story1" (click)="story1()" *ngIf="story1Aktiviert()">
+      <h3>Story 1</h3>
+      <p>Du fliegst durch ein blaues Wurmloch.</p>
+    </button>
+    <button class="story2" (click)="story2()" *ngIf="story2Aktiviert()">
+      <h3>Story 2</h3>
+      <p>Du fliegst durch ein rotes Wurmloch.</p>
+    </button>
+    <button class="story3" (click)="story3()" *ngIf="story3Aktiviert()">
+      <h3>Story 3</h3>
+      <p>Du fliegst durch ein grünes Wurmloch.</p>
+    </button>
   </div>
 </div>

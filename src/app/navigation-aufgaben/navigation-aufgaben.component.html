@@ -1,4 +1,4 @@
 <div class="navigation">
-  <button (click)="back()">Zurück</button>
+  <button *ngIf="showBackButton" (click)="back()">Zurück</button>
   <button *ngIf="showNextButton" (click)="weiter()">Weiter</button>
 </div>
