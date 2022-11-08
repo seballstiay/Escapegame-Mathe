@@ -5,8 +5,19 @@
 </div>
 
 <div class="Aufgabentext">
-  Um wie viel Gramm ist das Lachen leichter/schwerer als die Liebe, angenommen
-  die Liebe wiegt 1 g und die obige Waage ist ausgeglichen?
+  Löst die 5 Gleichungen nach x auf und findet so die geheime Botschaft heraus,
+  die der Verfasser verbreiten wollte. Hinweis: Wenn x zweistellig ist dann lang
+  und wenn x einstellig ist dann kurz.<br /><br />
+
+  1. 2x – 4 = 10 <br />
+
+  2. x/2 = 4<br />
+
+  3. 10x – 8x +2 = 0<br />
+
+  4. x + 21 = 29<br />
+
+  5. 5x – 5 = 20<br />
 </div>
 <div class="Eingabe">
   <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
@@ -16,18 +27,28 @@
   <div class="hinweis" [ngClass]="getClasses(0)">
     <h3>Hinweis 1</h3>
     <p>
-      Setze beide Seiten der Waage in einer Gleichung gleich. Eine Seite der
-      Waage entspricht einer Seite der Gleichung.
+      Bringt erst alle x (inklusive Faktor) auf eine und alle Zahlen auf die
+      andere Seite
     </p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(1)">
     <h3>Hinweis 2</h3>
-    <p>Lachen ist/sind x g und Liebe ist 1g. Erweitere deine Gleichung!</p>
+    <p>
+      Löst dann nach x auf, indem ihr auf beiden Seiten durch den Faktor teilt.
+    </p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
     <h3>Hinweis 3</h3>
     <p>
-      Die Gleichung ist 10x + 3 = 8x + 9, führe die Äquivalenzumformung durch!
+      x1 = 7 --> kurz<br />
+
+      x2 = 8 --> kurz<br />
+
+      x3 = 1 --> kurz<br />
+
+      x4 = 8 --> kurz<br />
+
+      x5 = 5 --> kurz<br />
     </p>
   </div>
 </div>

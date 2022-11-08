@@ -4,8 +4,15 @@
 </div>
 
 <div class="Aufgabentext">
-  Um wie viel Gramm ist das Lachen leichter/schwerer als die Liebe, angenommen
-  die Liebe wiegt 1 g und die obige Waage ist ausgeglichen?
+  Auf dem Revier werdet ihr einzeln befragt. Die Polizisten möchten wissen wer
+  das Auto geparkt und gestohlen hat. Wenn alle von euch schweigen, wird euch je
+  eine Strafe von 100€ auferlegt. Verrät eine Person die andere(n) Person,
+  müssen die Verratenen eine Strafe von 400€ bezahlen und der Verräter kommt
+  ohne Strafe davon. Wenn sich allerdings alle Personen gegenseitig verraten,
+  müssen sie alle 400 € bezahlen. Eure Mitspieler hatten keine Gelegenheit sich
+  abzuspre-chen. Sie wissen, dass am Ende das gesamte Team für ihre Strafe
+  aufkommen wird und möchten des-halb ihre gesamte Strafzahlung so gering wie
+  möglich halten. Wie sollten sich die Mitspieler darauf-hin entscheiden!
 </div>
 <div class="Eingabe">
   <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
@@ -15,18 +22,23 @@
   <div class="hinweis" [ngClass]="getClasses(0)">
     <h3>Hinweis 1</h3>
     <p>
-      Setze beide Seiten der Waage in einer Gleichung gleich. Eine Seite der
-      Waage entspricht einer Seite der Gleichung.
+      Überlegt euch welche Möglichkeiten bestehen und wieviel Geld ihr bei jeder
+      bezahlen müsstet.
     </p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(1)">
     <h3>Hinweis 2</h3>
-    <p>Lachen ist/sind x g und Liebe ist 1g. Erweitere deine Gleichung!</p>
+    <p>Es gibt 3 Möglickeiten.</p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
     <h3>Hinweis 3</h3>
     <p>
-      Die Gleichung ist 10x + 3 = 8x + 9, führe die Äquivalenzumformung durch!
+      Wenn sich die beiden nicht verraten müssen sie zusammen 200 € (jeder 100
+      €) bezahlen.<br />
+      Wenn einer den anderen verrät und dieser den anderen nicht müssen sie 0€ +
+      400 € also 400 € bezahlen.<br />
+      Wenn sie sich aus Versehen beide verraten, zahlen sie 800 €. Somit sollten
+      sich die beiden Mitspieler nicht verraten! = 200€ Strafe
     </p>
   </div>
 </div>
