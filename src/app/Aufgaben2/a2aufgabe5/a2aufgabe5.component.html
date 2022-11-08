@@ -4,8 +4,10 @@
 </div>
 
 <div class="Aufgabentext">
-  Um wie viel Gramm ist das Lachen leichter/schwerer als die Liebe, angenommen
-  die Liebe wiegt 1 g und die obige Waage ist ausgeglichen?
+  In diesem Universum werden die Koordinaten als vier Zahlen angegeben. Die
+  Koordinaten müssen in der richtigen Reihenfolge angegeben werden. Um die
+  Zahlen herauszufinden, müsst ihr alle Gleichungen lösen und die vier Zahlen
+  bestimmen.
 </div>
 <div class="Eingabe">
   <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
@@ -15,19 +17,18 @@
   <div class="hinweis" [ngClass]="getClasses(0)">
     <h3>Hinweis 1</h3>
     <p>
-      Setze beide Seiten der Waage in einer Gleichung gleich. Eine Seite der
-      Waage entspricht einer Seite der Gleichung.
+      Fangt mit Gleichung 3 an. Geht dann immer zu der Gleichung, wo eine
+      Variable mehr vorhanden ist. Setzt die Variablen schon ein, wenn ihr sie
+      berechnet habt.
     </p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(1)">
     <h3>Hinweis 2</h3>
-    <p>Lachen ist/sind x g und Liebe ist 1g. Erweitere deine Gleichung!</p>
+    <p>Geht beim Umformen wie in Rätsel 4 vor.</p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
     <h3>Hinweis 3</h3>
-    <p>
-      Die Gleichung ist 10x + 3 = 8x + 9, führe die Äquivalenzumformung durch!
-    </p>
+    <p>Lösung: a = 19, b = 8, c = 3, d = 15</p>
   </div>
 </div>
 <app-navigation-aufgaben [showNextButton]="false"></app-navigation-aufgaben>

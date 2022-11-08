@@ -4,9 +4,8 @@
 </div>
 
 <div class="Aufgabentext">
-  In 6 Jahren ist ETs Mutter dreimal so alt wie er und seine Oma neunmal so alt.
-  Die Summe ihrer drei Alter wird dann genau 25987 sein. Wie alt ist ET jetzt
-  gerade?
+  Ihr habt ein Problem, wie könnt ihr die Flasche exakt 9 Minuten am Hahn lassen
+  und die Zeit dabei stoppen.
 </div>
 <div class="Eingabe">
   <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
@@ -15,26 +14,22 @@
 <div class="hinweisContainer">
   <div class="hinweis" [ngClass]="getClasses(0)">
     <h3>Hinweis 1</h3>
-    <p>
-      Rechne für die Zeit nach 6 Jahren, da ist ET x Jahre alt. Wie alt sind
-      dann Mama und Oma (mit x ausgedrückt)? Wenn du x berechnet hast, vergesse
-      nicht, dass ET erst in 6 Jahren x Jahre alt ist. Wie alt ist er dann
-      jetzt?
-    </p>
+    <p>Beide Sanduhren werden zu Beginn gedreht.</p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(1)">
     <h3>Hinweis 2</h3>
     <p>
-      Addiere die Teilgleichungen (ETs, Mamas und Omas Alter) miteinander, setze
-      sie gleich 25987 löse sie auf.
+      Ihr kommt mit der kleinen Sanduhr auf 8 Minuten. Nun braucht ihr noch eine
+      Minute: Baut dafür die große Sanduhr mit ein.
     </p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
     <h3>Hinweis 3</h3>
     <p>
-      Wenn ET in 6 Jahren x Jahre alt ist, ist seine Mutter 3x Jahre alt und
-      seine Oma 9x Jahre. -> x + 3x + 9x = 25987, für das Ergebnis musst du noch
-      x - 6 rechnen.
+      Beide Sanduhren werden umgedreht. Nach 4 Minuten wird die kleine erneut
+      umgedreht. Nach sieben Minuten wird die große wieder gedreht. Nach 8
+      Minuten braucht ihr die Kleine nicht mehr. Die große dagegen ist jetzt
+      eine Minute gelaufen, diese dreht ihr wieder um und wartet die Minute ab.
     </p>
   </div>
 </div>

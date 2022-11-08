@@ -5,8 +5,9 @@
 </div>
 
 <div class="Aufgabentext">
-  Um wie viel Gramm ist das Lachen leichter/schwerer als die Liebe, angenommen
-  die Liebe wiegt 1 g und die obige Waage ist ausgeglichen?
+  Euch fällt neben dem Kasten ein zweistelliges Zahlenschloss auf. Darauf ist
+  eine Figur zu sehenSchnell seht ihr, dass ihr herausfinden, sollt wie viele
+  Dreiecke in der Figur versteckt sind.
 </div>
 <div class="Eingabe">
   <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
@@ -15,20 +16,15 @@
 <div class="hinweisContainer">
   <div class="hinweis" [ngClass]="getClasses(0)">
     <h3>Hinweis 1</h3>
-    <p>
-      Setze beide Seiten der Waage in einer Gleichung gleich. Eine Seite der
-      Waage entspricht einer Seite der Gleichung.
-    </p>
+    <p>Es gibt kleine, mittlere und große Dreiecke.</p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(1)">
     <h3>Hinweis 2</h3>
-    <p>Lachen ist/sind x g und Liebe ist 1g. Erweitere deine Gleichung!</p>
+    <p>Die Anzahl der großen und mittleren ist gleich.</p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
     <h3>Hinweis 3</h3>
-    <p>
-      Die Gleichung ist 10x + 3 = 8x + 9, führe die Äquivalenzumformung durch!
-    </p>
+    <p>Es sind 8 kleine, 4 mittlere und 4 große Dreiecke.</p>
   </div>
 </div>
 <app-navigation-aufgaben [showNextButton]="false"></app-navigation-aufgaben>

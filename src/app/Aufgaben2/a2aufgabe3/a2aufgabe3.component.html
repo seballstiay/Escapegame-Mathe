@@ -1,11 +1,19 @@
 <div class="aufgabenContainer">
   <h2>Aufgabe 3</h2>
   <p id="text">
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia porro
-    incidunt, sapiente quasi nulla voluptate aut modi accusamus ipsa, eaque
-    maxime quaerat ex. Repellendus commodi excepturi soluta fugiat, repellat
-    voluptatem. 1+1 =
+    Um den Würfel in eine Kugel zu verwandeln, stellt ihr zunächst die beiden
+    Formeln für das Volumen auf:<br />
+    VWürfel = ℎ ×ℎ ×ℎ VKugel = 43 ×𝑟3 × 𝜋<br />Einer von euch stellt sich neben
+    den Stein und ist exakt so groß wie der Stein (= 169cm). Da bei der
+    Verwandlung kein Teil des Steins verschwinden darf muss das Volumen
+    gleichbleiben, somit könnt ihr die zwei Formeln gleichsetzen und nach r
+    umstellen. VWürfel = VKugel = 1693= 43 ×𝑟3× 𝜋<br /><br />Hinweis: Um ein
+    hoch 3 aufzulösen müsst ihr (im Taschenrechner) vor die Wurzel an die Spitze
+    eine 3 schreiben. Natürlich gilt das für beide Seiten der Gleichung. Ihr
+    könnt die Zahlen nach dem Komma beim Endergebnis weglassen (aber davor
+    runden).
   </p>
+
   <div>
     <div class="row">
       <input id="0" type="radio" name="i" />
@@ -53,15 +61,21 @@ Checkbox für mehrere Richtige Antwortmöglichkeiten
 <div class="hinweisContainer">
   <div class="hinweis" [ngClass]="getClasses(0)">
     <h3>Hinweis 1</h3>
-    <p>2 ist die richtige Lösung.</p>
+    <p>
+      Löst die Gleichung nach r auf. Fangt an alle r auf eine Seite zu bekommen
+      (und sonst nichts) und zieht dann die 3. Wurzel.
+    </p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(1)">
     <h3>Hinweis 2</h3>
-    <p>1 ist die richtige Lösung.</p>
+    <p>𝑟3= 3 × (169)34 × 𝜋</p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
     <h3>Hinweis 3</h3>
-    <p>Jetzt wähl doch endlich das 2. Feld...</p>
+    <p>
+      r muss ungefähr 105cm groß sein damit das Volumen gleichbleibt. (Feld 2
+      ist richtig)
+    </p>
   </div>
 </div>
 <app-navigation-aufgaben [showNextButton]="false"></app-navigation-aufgaben>

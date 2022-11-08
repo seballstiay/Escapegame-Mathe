@@ -4,8 +4,12 @@
 </div>
 
 <div class="Aufgabentext">
-  Um wie viel Gramm ist das Lachen leichter/schwerer als die Liebe, angenommen
-  die Liebe wiegt 1 g und die obige Waage ist ausgeglichen?
+  Um die Tür des Raumschiffs zu öffnen, muss ein QR Code gescannt werden. Der
+  Code, welcher auf der Rückseite des Funkgeräts zu erkennen ist, ist jedoch
+  nicht vollständig, um das Betreten des Raumschiffs vor Fremden zu schützen.
+  Daher sind 5 Gleichungen an der Tür des Raumschiffs eingekratzt. Um den QR
+  Code komplett und funktionstüchtig zu machen, müssen die Ergebnisse für x, der
+  5 Gleichungen, im fehlenden Teil des QR Codes schwarz ausgemalt werden.
 </div>
 <div class="Eingabe">
   <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
@@ -15,19 +19,17 @@
   <div class="hinweis" [ngClass]="getClasses(0)">
     <h3>Hinweis 1</h3>
     <p>
-      Setze beide Seiten der Waage in einer Gleichung gleich. Eine Seite der
-      Waage entspricht einer Seite der Gleichung.
+      Bewegt immer alle Teile, die ein x enthalten auf eine Seite und die Teile
+      ohne x auf die andere Seite.
     </p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(1)">
     <h3>Hinweis 2</h3>
-    <p>Lachen ist/sind x g und Liebe ist 1g. Erweitere deine Gleichung!</p>
+    <p>ntfernt nun noch Faktoren damit nur x = … dasteht.</p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
     <h3>Hinweis 3</h3>
-    <p>
-      Die Gleichung ist 10x + 3 = 8x + 9, führe die Äquivalenzumformung durch!
-    </p>
+    <p>Lösung: x1 = 7, x2 = 4, x3 = 5, x4 = 1, x5 = 9</p>
   </div>
 </div>
 <app-navigation-aufgaben [showNextButton]="false"></app-navigation-aufgaben>
