@@ -10,12 +10,12 @@ h1 {
 .Bild {
   width: 100%;
   text-align: center;
-  img {
-    width: 35%;
-    height: auto;
-  }
+  min-height: 20rem;
 }
-
+.img {
+  width: 35%;
+  height: 100%;
+}
 .Eingabe {
   display: flex;
   justify-content: space-between;

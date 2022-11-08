@@ -14,7 +14,23 @@
   padding: 1rem;
   text-align: justify;
 }
-
+.bildtext {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.bildtext2 {
+  text-align: center;
+}
+.Bild1 {
+  height: 3rem;
+}
+.Bild2 {
+  height: 3rem;
+}
+.Bild3 {
+  height: 3rem;
+}
 .hinweisContainer {
   width: 100%;
   display: flex;
