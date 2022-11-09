@@ -1,14 +1,24 @@
 <h1>Aufgabe 2</h1>
 <div class="Bild">
-  <img src="\assets\W2_A2.png" alt="" />
+  <img src="\assets\images\W2_A2.png" alt="" />
 </div>
 
 <div class="Aufgabentext">
   Ihr habt ein Problem, wie könnt ihr die Flasche exakt 9 Minuten am Hahn lassen
-  und die Zeit dabei stoppen.
+  und die Zeit dabei stoppen. Überlegt euch wie ihr vorgehen müsst und gebt an
+  wie oft ihr die Kleine Sanduhr und wie oft ihr die große Sanduhr drehen müsst.
 </div>
 <div class="Eingabe">
-  <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
+  <input
+    type="text"
+    [(ngModel)]="inputWertSmall"
+    placeholder="Anzahl kleine Sanduhr"
+  />
+  <input
+    type="text"
+    [(ngModel)]="inputWertBig"
+    placeholder="Anzahl große Sanduhr"
+  />
   <button (click)="pruefen()">Prüfen</button>
 </div>
 <div class="hinweisContainer">

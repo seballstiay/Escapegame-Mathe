@@ -8,7 +8,7 @@
   hinzugeben um eine 1 prozentige Lösung zu erhalten?
 </div>
 <div class="Eingabe">
-  <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
+  <input type="text" [(ngModel)]="inputWert" placeholder="Lösung in ml" />
   <button (click)="pruefen()">Prüfen</button>
 </div>
 <div class="hinweisContainer">
@@ -28,7 +28,7 @@
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
     <h3>Hinweis 3</h3>
-    <p>Stellt folgende Gleichung auf: 1 × 0,1 = (1+x) × 0,01</p>
+    <p>Stellt folgende Gleichung auf: 1 × 1ml = (1+x) × 1ml</p>
   </div>
 </div>
 <app-navigation-aufgaben [showNextButton]="false"></app-navigation-aufgaben>

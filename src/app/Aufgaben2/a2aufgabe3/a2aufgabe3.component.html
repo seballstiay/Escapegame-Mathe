@@ -4,8 +4,8 @@
     Um den Würfel in eine Kugel zu verwandeln, stellt ihr zunächst die beiden
     Formeln für das Volumen auf:<br />
     <div class="bildtext">
-      <img class="Bild1" src="\assets\W2_F1.png" alt="" />
-      <img class="Bild2" src="\assets\W2_F2.png" alt="" />
+      <img class="Bild1" src="\assets\images\W2_F1.png" alt="" />
+      <img class="Bild2" src="\assets\images\W2_F2.png" alt="" />
     </div>
 
     <br />Einer von euch stellt sich neben den Stein und ist exakt so groß wie
@@ -13,15 +13,15 @@
     verschwinden darf muss das Volumen gleichbleiben, somit könnt ihr die zwei
     Formeln gleichsetzen und nach r umstellen. <br />
     <div class="bildtext2">
-      <img class="Bild3" src="\assets\W2_F3.png" alt="" /><br />
+      <img class="Bild3" src="\assets\images\W2_F3.png" alt="" /><br />
     </div>
 
     Hinweis: Um ein hoch 3 aufzulösen müsst ihr (im Taschenrechner) vor die
     Wurzel an die Spitze eine 3 schreiben. Natürlich gilt das für beide Seiten
-    der Gleichung. Ihr könnt die Zahlen nach dem Komma beim Endergebnis
-    weglassen (aber davor runden).
+    der Gleichung. Es muss auf ganze Zahlen gerundet werden.
   </div>
 
+  <!--
   <div>
     <div class="row">
       <input id="0" type="radio" name="i" />
@@ -41,7 +41,7 @@
     </div>
   </div>
 
-  <!--
+  
 Checkbox für mehrere Richtige Antwortmöglichkeiten
     <div>
     <div class="row">
@@ -62,8 +62,10 @@ Checkbox für mehrere Richtige Antwortmöglichkeiten
     </div>
   </div>
 -->
-
-  <button (click)="pruefen()">Prüfen</button>
+  <div class="Eingabe">
+    <input type="text" [(ngModel)]="inputWert" placeholder="Lösung in cm" />
+    <button (click)="pruefen()">Prüfen</button>
+  </div>
 </div>
 
 <div class="hinweisContainer">
@@ -76,7 +78,7 @@ Checkbox für mehrere Richtige Antwortmöglichkeiten
   </div>
   <div class="hinweis" [ngClass]="getClasses(1)">
     <h3>Hinweis 2</h3>
-    <p><img class="Bild4" src="\assets\W2_Tipp2_F1.png" alt="" /></p>
+    <p><img class="Bild4" src="\assets\images\W2_A3_Tipp2_F1.png" alt="" /></p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
     <h3>Hinweis 3</h3>

@@ -13,7 +13,7 @@ export class S1teil6Component implements OnInit {
   ngOnInit(): void {}
 
   weiter() {
-    this.router.navigate(['/a1aufgabe6']);
+    this.router.navigate(['/spiel-beitreten']);
   }
   back() {
     this.location.back();

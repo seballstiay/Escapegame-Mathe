@@ -9,19 +9,24 @@ export class A2aufgabe2Component implements OnInit {
   constructor(private router: Router) {}
 
   $a = 0;
-  inputWert = '';
+  inputWertSmall = '';
+  inputWertBig = '';
   hinweise = {
     0: false,
     1: false,
     2: false
   };
   //Hier kommt das richtige Ergebnis der Aufgabe hin
-  $antwort = '1999';
+  $antwortBig = '3';
+  $antwortSmall = '2';
 
   ngOnInit(): void {}
 
   pruefen() {
-    if (this.inputWert === this.$antwort) {
+    if (
+      this.inputWertSmall === this.$antwortSmall &&
+      this.inputWertBig === this.$antwortBig
+    ) {
       this.router.navigate(['/s2teil3']);
     } else {
       console.log('Dieses Ergebnis ist flasch');

@@ -5,7 +5,7 @@
 
 <div class="Aufgabentext">
   Ihr habt 11€ für euer Mittagessen. Eine fliegende Alge kostet 0,50 € und ein
-  Stück Kraken-Tort 1,80 €. Ihr braucht 4 fliegende Algen! Wie viele
+  Stück Kraken-Torte 1,80 €. Ihr braucht 4 fliegende Algen! Wie viele
   Tortenstücke könnt ihr euch noch kaufen?
 </div>
 <div class="Eingabe">
@@ -15,22 +15,21 @@
 <div class="hinweisContainer">
   <div class="hinweis" [ngClass]="getClasses(0)">
     <h3>Hinweis 1</h3>
-    <p>Ihr könnt x Tortenstücke kaufen.</p>
-  </div>
-  <div class="hinweis" [ngClass]="getClasses(1)">
-    <h3>Hinweis 2</h3>
     <p>
       Der Preis von x Tortenstücke und 4 Algen zusammen addiert muss gleich 11 €
       gesetzt werden.
     </p>
   </div>
+  <div class="hinweis" [ngClass]="getClasses(1)">
+    <h3>Hinweis 2</h3>
+    <p>
+      0,5 € · 4 + 1,80 € · x = 11€ <br />
+      1,80 € · x = 9€ <br />
+    </p>
+  </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
     <h3>Hinweis 3</h3>
-    <p>
-      0,5 € · 4 + 1, 8x = 11 <br />
-      1, 8x = 9 <br />
-      x = 5 -> Ihr könnt noch 5 Stücke Torte kaufen!
-    </p>
+    <p>x = 5</p>
   </div>
 </div>
 <app-navigation-aufgaben [showNextButton]="false"></app-navigation-aufgaben>

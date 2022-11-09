@@ -67,6 +67,8 @@ import { S3teil4Component } from './_Story3/s3teil4/s3teil4.component';
 import { S3teil5Component } from './_Story3/s3teil5/s3teil5.component';
 import { S3teil6Component } from './_Story3/s3teil6/s3teil6.component';
 import { S3teil7Component } from './_Story3/s3teil7/s3teil7.component';
+import { NavigationStoryComponent } from './navigation-story/navigation-story.component';
+import { HinweisService } from './hinweis.service';
 
 @NgModule({
   declarations: [
@@ -134,10 +136,11 @@ import { S3teil7Component } from './_Story3/s3teil7/s3teil7.component';
     S3teil4Component,
     S3teil5Component,
     S3teil6Component,
-    S3teil7Component
+    S3teil7Component,
+    NavigationStoryComponent
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule],
-  providers: [],
+  providers: [HinweisService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

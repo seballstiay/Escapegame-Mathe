@@ -9,9 +9,10 @@ h1 {
 
 .Bild {
   width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
   img {
-    width: 35%;
+    width: 30%;
     height: auto;
   }
 }

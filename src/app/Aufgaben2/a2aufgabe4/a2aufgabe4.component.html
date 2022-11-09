@@ -1,7 +1,4 @@
 <h1>Aufgabe 4</h1>
-<div class="Bild">
-  <img src="\assets\Beispiel.jpg" alt="" />
-</div>
 
 <div class="Aufgabentext">
   Um die Tür des Raumschiffs zu öffnen, muss ein QR Code gescannt werden. Der
@@ -11,10 +8,67 @@
   Code komplett und funktionstüchtig zu machen, müssen die Ergebnisse für x, der
   5 Gleichungen, im fehlenden Teil des QR Codes schwarz ausgemalt werden.
 </div>
-<div class="Eingabe">
-  <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
-  <button (click)="pruefen()">Prüfen</button>
+<div class="Bild">
+  <img src="\assets\images\W2_A4_Angabe.png" alt="" />
 </div>
+<div class="spalten">
+  <div class="spalte1">
+    <div class="row">
+      <input id="0" type="checkbox" [(ngModel)]="option1" />
+      <label for="1">Option 1</label>
+    </div>
+    <div class="row">
+      <input id="1" type="checkbox" [(ngModel)]="option2" />
+      <label for="2">Option 2</label>
+    </div>
+    <div class="row">
+      <input id="2" type="checkbox" [(ngModel)]="option3" />
+      <label for="3">Option 3</label>
+    </div>
+    <div class="row">
+      <input id="3" type="checkbox" [(ngModel)]="option4" />
+      <label for="4">Option 4</label>
+    </div>
+  </div>
+  <div class="spalte2">
+    <div class="row">
+      <input id="4" type="checkbox" [(ngModel)]="option5" />
+      <label for="5">Option 5</label>
+    </div>
+    <div class="row">
+      <input id="5" type="checkbox" [(ngModel)]="option6" />
+      <label for="6">Option 6</label>
+    </div>
+    <div class="row">
+      <input id="6" type="checkbox" [(ngModel)]="option7" />
+      <label for="7">Option 7</label>
+    </div>
+    <div class="row">
+      <input id="8" type="checkbox" [(ngModel)]="option8" />
+      <label for="9">Option 8</label>
+    </div>
+  </div>
+  <div class="spalte3">
+    <div class="row">
+      <input id="9" type="checkbox" [(ngModel)]="option9" />
+      <label for="10">Option 9</label>
+    </div>
+    <div class="row">
+      <input id="10" type="checkbox" [(ngModel)]="option10" />
+      <label for="11">Option 10</label>
+    </div>
+    <div class="row">
+      <input id="11" type="checkbox" [(ngModel)]="option11" />
+      <label for="12">Option 11</label>
+    </div>
+    <div class="row">
+      <input id="12" type="checkbox" [(ngModel)]="option12" />
+      <label for="13">Option 12</label>
+    </div>
+  </div>
+</div>
+<div class="pruefen"><button (click)="pruefen()">Prüfen</button></div>
+
 <div class="hinweisContainer">
   <div class="hinweis" [ngClass]="getClasses(0)">
     <h3>Hinweis 1</h3>
@@ -25,11 +79,17 @@
   </div>
   <div class="hinweis" [ngClass]="getClasses(1)">
     <h3>Hinweis 2</h3>
-    <p>ntfernt nun noch Faktoren damit nur x = … dasteht.</p>
+    <p>Entfernt nun noch Faktoren damit nur x = … dasteht.</p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
     <h3>Hinweis 3</h3>
-    <p>Lösung: x1 = 7, x2 = 4, x3 = 5, x4 = 1, x5 = 9</p>
+    <p>
+      x1 = 7<br />
+      x2 = 4<br />
+      x3 = 5<br />
+      x4 = 1<br />
+      x5 = 9
+    </p>
   </div>
 </div>
 <app-navigation-aufgaben [showNextButton]="false"></app-navigation-aufgaben>

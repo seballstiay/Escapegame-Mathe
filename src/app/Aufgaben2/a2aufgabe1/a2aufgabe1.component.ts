@@ -16,7 +16,7 @@ export class A2aufgabe1Component implements OnInit {
     2: false
   };
   //Hier kommt das richtige Ergebnis der Aufgabe hin
-  $antwort = '2g';
+  $antwort = '16';
 
   ngOnInit(): void {}
 

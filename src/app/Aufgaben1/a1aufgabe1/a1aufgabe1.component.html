@@ -1,15 +1,15 @@
-<p>a1aufgabe1 works!</p>
 <h1>Aufgabe 1</h1>
 <div class="Bild">
-  <img src="\assets\W1_A1_Infografik.png" alt="" />
+  <img src="\assets\images\W1_A1_Bild.jpg" alt="" />
 </div>
 
 <div class="Aufgabentext">
   Um wie viel Gramm ist das Lachen leichter/schwerer als die Liebe, angenommen
   die Liebe wiegt 1 g und die obige Waage ist ausgeglichen?
 </div>
+<span>Blub {{ hinweisService.hinweise.value }}</span>
 <div class="Eingabe">
-  <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
+  <input type="text" [(ngModel)]="inputWert" placeholder="Lösung in Gramm" />
   <button (click)="pruefen()">Prüfen</button>
 </div>
 <div class="hinweisContainer">

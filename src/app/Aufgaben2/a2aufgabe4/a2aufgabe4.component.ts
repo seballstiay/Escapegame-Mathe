@@ -15,14 +15,52 @@ export class A2aufgabe4Component implements OnInit {
     1: false,
     2: false
   };
-  //Hier kommt das richtige Ergebnis der Aufgabe hin
-  $antwort = '2g';
+  //hier kommt das richtige Ergebnis hin
+
+  option1 = false;
+  option2 = false;
+  option3 = false;
+  option4 = false;
+  option5 = false;
+  option6 = false;
+  option7 = false;
+  option8 = false;
+  option9 = false;
+  option10 = false;
+  option11 = false;
+  option12 = false;
+
+  $antwort1 = true;
+  $antwort2 = false;
+  $antwort3 = false;
+  $antwort4 = true;
+  $antwort5 = true;
+  $antwort6 = false;
+  $antwort7 = true;
+  $antwort8 = false;
+  $antwort9 = true;
+  $antwort10 = false;
+  $antwort11 = false;
+  $antwort12 = false;
 
   ngOnInit(): void {}
 
   pruefen() {
-    if (this.inputWert === this.$antwort) {
-      this.router.navigate(['/s2teil5']);
+    if (
+      this.option1 === this.$antwort1 &&
+      this.option2 === this.$antwort2 &&
+      this.option3 === this.$antwort3 &&
+      this.option4 === this.$antwort4 &&
+      this.option5 === this.$antwort5 &&
+      this.option6 === this.$antwort6 &&
+      this.option7 === this.$antwort7 &&
+      this.option8 === this.$antwort8 &&
+      this.option9 === this.$antwort9 &&
+      this.option10 === this.$antwort10 &&
+      this.option11 === this.$antwort11 &&
+      this.option12 === this.$antwort12
+    ) {
+      this.router.navigate(['/s2teil4']);
     } else {
       console.log('Dieses Ergebnis ist flasch');
       this.$a++;
@@ -33,7 +71,6 @@ export class A2aufgabe4Component implements OnInit {
       }
     }
   }
-
   toggleHinweis(h: 0 | 1 | 2) {
     this.hinweise[h] = !this.hinweise[h];
   }

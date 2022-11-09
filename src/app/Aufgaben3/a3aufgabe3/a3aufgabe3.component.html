@@ -10,6 +10,7 @@
 </div>
 <div class="Eingabe">
   <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
+
   <button (click)="pruefen()">Prüfen</button>
 </div>
 <div class="hinweisContainer">
@@ -25,7 +26,7 @@
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
     <h3>Hinweis 3</h3>
-    <p>Kosten = 3x + b10 + 3,5z</p>
+    <p>Kosten = 3x + 10b + 3,5z</p>
   </div>
 </div>
 <app-navigation-aufgaben [showNextButton]="false"></app-navigation-aufgaben>

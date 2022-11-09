@@ -9,24 +9,23 @@
   gerade?
 </div>
 <div class="Eingabe">
-  <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
+  <input type="text" [(ngModel)]="inputWert" placeholder="Lösung in Jahren" />
   <button (click)="pruefen()">Prüfen</button>
 </div>
 <div class="hinweisContainer">
   <div class="hinweis" [ngClass]="getClasses(0)">
     <h3>Hinweis 1</h3>
     <p>
-      Rechne für die Zeit nach 6 Jahren, da ist ET x Jahre alt. Wie alt sind
-      dann Mama und Oma (mit x ausgedrückt)? Wenn du x berechnet hast, vergesse
-      nicht, dass ET erst in 6 Jahren x Jahre alt ist. Wie alt ist er dann
-      jetzt?
+      Nach 6 Jahren ist ET x Jahre alt. Wie alt sind dann Mama und Oma (mit x
+      ausgedrückt)? Wenn du x berechnet hast, vergesse nicht, dass ET erst in 6
+      Jahren x Jahre alt ist.
     </p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(1)">
     <h3>Hinweis 2</h3>
     <p>
-      Addiere die Teilgleichungen (ETs, Mamas und Omas Alter) miteinander, setze
-      sie gleich 25987 löse sie auf.
+      Addiere die Teilgleichungen (ETs, Mamas und Omas Alter), setze sie gleich
+      25987 und löse sie auf.
     </p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
@@ -34,7 +33,8 @@
     <p>
       Wenn ET in 6 Jahren x Jahre alt ist, ist seine Mutter 3x Jahre alt und
       seine Oma 9x Jahre. <br />
-      -> x + 3x + 9x = 25987, für das Ergebnis musst du noch x - 6 rechnen
+      x + 3x + 9x = 25987 <br />
+      Das Ergebnis musst du noch mit 6 Jahren subtrahieren.
     </p>
   </div>
 </div>

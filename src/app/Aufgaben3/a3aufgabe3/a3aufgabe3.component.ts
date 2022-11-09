@@ -16,12 +16,12 @@ export class A3aufgabe3Component implements OnInit {
     2: false
   };
   //Hier kommt das richtige Ergebnis der Aufgabe hin
-  $antwort = '2g';
+  $antwort = '3x+10b+3,5z';
 
   ngOnInit(): void {}
 
   pruefen() {
-    if (this.inputWert === this.$antwort) {
+    if (this.inputWert?.toLowerCase().replace(/ /g, '') === this.$antwort) {
       this.router.navigate(['/s3teil5']);
     } else {
       console.log('Dieses Ergebnis ist flasch');

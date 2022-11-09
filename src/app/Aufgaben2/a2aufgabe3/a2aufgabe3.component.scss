@@ -8,6 +8,21 @@
   }
 }
 
+.Eingabe {
+  display: flex;
+  justify-content: space-between;
+  input {
+    text-align: center;
+    width: 75%;
+  }
+  button {
+    width: 25%;
+  }
+  width: 30%;
+  height: 1.5rem;
+  margin: 1.5rem 35%;
+}
+
 #text {
   background-color: #eceff4;
   border-radius: 0.5rem;
@@ -31,6 +46,9 @@
 .Bild3 {
   height: 3rem;
 }
+.Bild4 {
+  height: 3rem;
+}
 .hinweisContainer {
   width: 100%;
   display: flex;
@@ -49,8 +67,4 @@
 
 .show {
   display: block;
-}
-
-button {
-  margin-top: 1rem;
 }
