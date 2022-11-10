@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
 
   //muss noch rausgemacht werden damit man nicht in die selben Storys gehen kann...
   ngOnInit() {
-    localStorage.clear();
+    //localStorage.clear();
   }
   // für testen aber wichtig :)
 }

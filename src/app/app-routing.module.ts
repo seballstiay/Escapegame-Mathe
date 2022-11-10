@@ -61,6 +61,7 @@ import { S3teil4Component } from './_Story3/s3teil4/s3teil4.component';
 import { S3teil5Component } from './_Story3/s3teil5/s3teil5.component';
 import { S3teil6Component } from './_Story3/s3teil6/s3teil6.component';
 import { S3teil7Component } from './_Story3/s3teil7/s3teil7.component';
+import { EndeComponent } from './ende/ende.component';
 
 const routes: Routes = [
   {
@@ -307,6 +308,10 @@ const routes: Routes = [
   {
     path: 's3teil7',
     component: S3teil7Component
+  },
+  {
+    path: 'ende',
+    component: EndeComponent
   }
 ];
 

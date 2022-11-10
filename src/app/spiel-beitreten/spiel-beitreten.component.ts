@@ -25,6 +25,9 @@ export class SpielBeitretenComponent implements OnInit {
     localStorage.setItem('story3', 'true');
     this.router.navigate(['/s3teil1']);
   }
+  ende() {
+    this.router.navigate(['/ende']);
+  }
 
   story1Aktiviert() {
     return localStorage.getItem('story1') !== 'true';

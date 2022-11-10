@@ -1,0 +1,21 @@
+.seite {
+  padding: 4rem;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.border {
+  border-radius: 0.3rem;
+  background: rgb(89, 89, 89);
+  color: rgb(255, 255, 255);
+  padding: 3rem 10%;
+  width: 50%;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  margin: 3rem;
+}
+.text {
+  text-align: center;
+}
