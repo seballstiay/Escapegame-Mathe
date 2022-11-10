@@ -60,7 +60,7 @@ export class A2aufgabe4Component implements OnInit {
       this.option11 === this.$antwort11 &&
       this.option12 === this.$antwort12
     ) {
-      this.router.navigate(['/s2teil4']);
+      this.router.navigate(['/s2teil5']);
     } else {
       console.log('Dieses Ergebnis ist flasch');
       this.$a++;
