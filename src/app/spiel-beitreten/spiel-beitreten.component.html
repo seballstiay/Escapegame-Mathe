@@ -15,7 +15,7 @@
       <h3>Story 3</h3>
       <p>Du fliegst durch ein grünes Wurmloch.</p>
     </button>
-    <button class="Finish" *ngIf="finished()">
+    <button class="ende" (click)="ende()" *ngIf="finished()">
       <p>Ob das wohl das letzte Wurmloch ist?</p>
     </button>
   </div>
