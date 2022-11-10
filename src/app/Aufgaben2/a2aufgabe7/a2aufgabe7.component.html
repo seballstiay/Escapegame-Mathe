@@ -1,6 +1,6 @@
 <h1>Aufgabe 7</h1>
 <div class="Bild">
-  <img src="\assets\Beispiel.jpg" alt="" />
+  <img src= image alt="" />
 </div>
 
 <div class="Aufgabentext">
@@ -8,9 +8,26 @@
   die Liebe wiegt 1 g und die obige Waage ist ausgeglichen?
 </div>
 <div class="Eingabe">
-  <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
+  <input type="text" [(ngModel)]="inputWert1" placeholder="Lösung 1" />
+  <button (click)="pruefen()" hidden>Prüfen</button>
+</div>
+<div class="Eingabe">
+  <input type="text" [(ngModel)]="inputWert2" placeholder="Lösung 2" />
+  <button (click)="pruefen()" hidden>Prüfen</button>
+</div>
+<div class="Eingabe">
+  <input type="text" [(ngModel)]="inputWert3" placeholder="Lösung 3" />
+  <button (click)="pruefen()" hidden>Prüfen</button>
+</div>
+<div class="Eingabe">
+  <input type="text" [(ngModel)]="inputWert4" placeholder="Lösung 4" />
+  <button (click)="bildW()">Zeichnen</button>
+</div>
+<div class="Eingabe">
+  <input type="text" [(ngModel)]="inputWert5" placeholder="Lösung 5" />
   <button (click)="pruefen()">Prüfen</button>
 </div>
+
 <div class="hinweisContainer">
   <div class="hinweis" [ngClass]="getClasses(0)">
     <h3>Hinweis 1</h3>
