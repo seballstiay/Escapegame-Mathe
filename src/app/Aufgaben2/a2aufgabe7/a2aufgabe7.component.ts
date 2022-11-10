@@ -10,8 +10,8 @@ export class A2aufgabe7Component implements OnInit {
 
   $a = 0;
   $b = 0;
-  images = ["\assets\images\QRCodeDef.png", "\assets\images\QRCodeA1.png", "\assets\images\QRCodeA2.png",
-             "\assets\images\QRCodeA3.png", "\assets\images\QRCodeA4.png", "\assets\images\QRCodeA5.png",];
+  images = ["\\assets\\images\\QRCodeDef.png", "\\assets\\images\\QRCodeA1.png", "\\assets\\images\\QRCodeA2.png",
+             "\\assets\\images\\QRCodeA3.png", "\\assets\\images\\QRCodeA4.png", "\\assets\\images\\QRCodeA5.png"];
   image = this.images[0];
   inputWert1 = '';
   inputWert2 = '';
