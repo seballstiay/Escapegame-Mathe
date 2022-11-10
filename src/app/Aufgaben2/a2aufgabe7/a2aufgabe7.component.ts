@@ -33,7 +33,7 @@ export class A2aufgabe7Component implements OnInit {
   ngOnInit(): void {}
   bildW() {
     if(this.inputWert1 === this.$antwort1){
-        this.image = this.images[1];
+      this.image = this.images[1];
     }
     if(this.inputWert1 === this.$antwort1 &&
       this.inputWert2 === this.$antwort2 ){
@@ -58,6 +58,10 @@ export class A2aufgabe7Component implements OnInit {
       this.image = this.images[5];
     }
 
+  }
+
+  bilder():string{
+    return this.image;
   }
 
   pruefen() {
