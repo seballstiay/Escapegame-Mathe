@@ -5,7 +5,7 @@ import { HinweisService } from 'src/app/hinweis.service';
   encapsulation: ViewEncapsulation.None,
   selector: 'app-ende',
   templateUrl: './ende.component.html',
-  styleUrls: ['./ende.component.scss'], 
+  styleUrls: ['./ende.component.scss']
 })
 export class EndeComponent implements OnInit {
   constructor(public hinweisService: HinweisService) {}
