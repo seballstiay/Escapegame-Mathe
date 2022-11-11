@@ -24,7 +24,7 @@ export class A3aufgabe3Component implements OnInit {
     if (this.inputWert?.toLowerCase().replace(/ /g, '') === this.$antwort) {
       this.router.navigate(['/s3teil5']);
     } else {
-      console.log('Dieses Ergebnis ist flasch');
+      console.log('Dieses Ergebnis ist falsch');
       this.$a++;
       const a = this.$a - 3;
 

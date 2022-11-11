@@ -22,7 +22,7 @@ export class A3aufgabe2Component implements OnInit {
 
   pruefen() {
     if (this.inputWert === this.$antwort) {
-      this.router.navigate(['/s3teil4']);
+      this.router.navigate(['/s3teil3']);
     } else {
       console.log('Dieses Ergebnis ist flasch');
       this.$a++;
