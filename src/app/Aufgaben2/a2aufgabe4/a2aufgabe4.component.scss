@@ -1,36 +1,51 @@
 .Aufgabentext {
   width: 80%;
   margin: 1rem 10%;
-  text-align: center;
+  text-align: justify;
 }
 h1 {
   text-align: center;
 }
+.Parent{
+  display:flex;
+  justify-content: center;
+}
+
+.Eingaben{
+  display:inline;
+}
 
 .Bild {
-  width: 100%;
+  width: 30%;
   text-align: center;
   img {
-    width: 23%;
+    width: 85%;
     height: auto;
   }
 }
 
-.pruefen {
-  display: flex;
-  justify-content: center;
-  margin: 1.5rem;
-  button {
-    width: 10%;
-  }
-}
 
-.spalten {
-  display: flex;
-  justify-content: space-evenly;
+.Eingabe {
+  flex:1;
+  justify-content: center;
+  input {
+    text-align: center;
+    width: 75%;
+    height:100%;
+  }
+  button {
+    width: 25%;
+    margin-left: 25%;
+    margin-top: 10%;
+    height:100%
+  }
+  width: 100%;
+  height: 1.5rem;
+  margin: 1rem;
 }
 
 .hinweisContainer {
+  margin-top: 1rem;
   width: 100%;
   display: flex;
   justify-content: space-around;

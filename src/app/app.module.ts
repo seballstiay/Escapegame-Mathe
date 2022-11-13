@@ -23,22 +23,16 @@ import { A1aufgabe2Component } from './Aufgaben1/a1aufgabe2/a1aufgabe2.component
 import { A1aufgabe3Component } from './Aufgaben1/a1aufgabe3/a1aufgabe3.component';
 import { A1aufgabe4Component } from './Aufgaben1/a1aufgabe4/a1aufgabe4.component';
 import { A1aufgabe5Component } from './Aufgaben1/a1aufgabe5/a1aufgabe5.component';
-import { A1aufgabe6Component } from './Aufgaben1/a1aufgabe6/a1aufgabe6.component';
-import { A1aufgabe7Component } from './Aufgaben1/a1aufgabe7/a1aufgabe7.component';
 import { A2aufgabe1Component } from './Aufgaben2/a2aufgabe1/a2aufgabe1.component';
 import { A2aufgabe2Component } from './Aufgaben2/a2aufgabe2/a2aufgabe2.component';
 import { A2aufgabe3Component } from './Aufgaben2/a2aufgabe3/a2aufgabe3.component';
 import { A2aufgabe4Component } from './Aufgaben2/a2aufgabe4/a2aufgabe4.component';
 import { A2aufgabe5Component } from './Aufgaben2/a2aufgabe5/a2aufgabe5.component';
-import { A2aufgabe6Component } from './Aufgaben2/a2aufgabe6/a2aufgabe6.component';
-import { A2aufgabe7Component } from './Aufgaben2/a2aufgabe7/a2aufgabe7.component';
 import { A3aufgabe1Component } from './Aufgaben3/a3aufgabe1/a3aufgabe1.component';
 import { A3aufgabe2Component } from './Aufgaben3/a3aufgabe2/a3aufgabe2.component';
 import { A3aufgabe3Component } from './Aufgaben3/a3aufgabe3/a3aufgabe3.component';
 import { A3aufgabe4Component } from './Aufgaben3/a3aufgabe4/a3aufgabe4.component';
 import { A3aufgabe5Component } from './Aufgaben3/a3aufgabe5/a3aufgabe5.component';
-import { A3aufgabe6Component } from './Aufgaben3/a3aufgabe6/a3aufgabe6.component';
-import { A3aufgabe7Component } from './Aufgaben3/a3aufgabe7/a3aufgabe7.component';
 import { Teil1Component } from './_Story/teil1/teil1.component';
 import { Teil2Component } from './_Story/teil2/teil2.component';
 import { Teil3Component } from './_Story/teil3/teil3.component';
@@ -115,22 +109,16 @@ import { EndeComponent } from './ende/ende.component';
     A1aufgabe3Component,
     A1aufgabe4Component,
     A1aufgabe5Component,
-    A1aufgabe6Component,
-    A1aufgabe7Component,
     A2aufgabe1Component,
     A2aufgabe2Component,
     A2aufgabe3Component,
     A2aufgabe4Component,
     A2aufgabe5Component,
-    A2aufgabe6Component,
-    A2aufgabe7Component,
     A3aufgabe1Component,
     A3aufgabe2Component,
     A3aufgabe3Component,
     A3aufgabe4Component,
     A3aufgabe5Component,
-    A3aufgabe6Component,
-    A3aufgabe7Component,
     S3teil1Component,
     S3teil2Component,
     S3teil3Component,

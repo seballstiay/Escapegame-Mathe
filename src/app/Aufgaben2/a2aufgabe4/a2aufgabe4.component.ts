@@ -9,58 +9,65 @@ export class A2aufgabe4Component implements OnInit {
   constructor(private router: Router) {}
 
   $a = 0;
-  inputWert = '';
+  $b = 0;
+  images = ["\\assets\\images\\QR\\QR1.PNG", "\\assets\\images\\QR\\QR2.PNG", "\\assets\\images\\QR\\QR3.PNG",
+             "\\assets\\images\\QR\\QR4.PNG", "\\assets\\images\\QR\\QR5.PNG", "\\assets\\images\\QR\\QR6.PNG"];
+  indexI = 0;
+  image = this.images[this.indexI];
+  
+  inputWert1 = '';
+  inputWert2 = '';
+  inputWert3 = '';
+  inputWert4 = '';
+  inputWert5 = '';
   hinweise = {
     0: false,
     1: false,
     2: false
   };
-  //hier kommt das richtige Ergebnis hin
-
-  option1 = false;
-  option2 = false;
-  option3 = false;
-  option4 = false;
-  option5 = false;
-  option6 = false;
-  option7 = false;
-  option8 = false;
-  option9 = false;
-  option10 = false;
-  option11 = false;
-  option12 = false;
-
-  $antwort1 = true;
-  $antwort2 = false;
-  $antwort3 = false;
-  $antwort4 = true;
-  $antwort5 = true;
-  $antwort6 = false;
-  $antwort7 = true;
-  $antwort8 = false;
-  $antwort9 = true;
-  $antwort10 = false;
-  $antwort11 = false;
-  $antwort12 = false;
+  //Hier kommt das richtige Ergebnis der Aufgabe hin
+  $antwort1 = '7';
+  $antwort2 = '4';
+  $antwort3 = '5';
+  $antwort4 = '1';
+  $antwort5 = '9';
 
   ngOnInit(): void {}
+  bildW() {
+    if(this.inputWert1 === this.$antwort1){
+      this.$antwort1 += 1;
+      this.indexI = this.indexI+1;
+    }
+    if(this.inputWert2 === this.$antwort2 ){
+      this.$antwort2 += 1;
+      this.indexI = this.indexI+1;
+    }
+    if(this.inputWert3 === this.$antwort3 ){
+      this.$antwort3 += 1;
+      this.indexI = this.indexI+1;
+    }
+    if(this.inputWert4 === this.$antwort4 ){
+      this.$antwort4 += 1;
+      this.indexI = this.indexI+1;
+    }
+    if(this.inputWert5 === this.$antwort5 ){
+      this.$antwort5 += 1;
+      this.indexI = this.indexI+1;
+    }
+    this.image=this.images[this.indexI];
+  }
+
+  bilder():string{
+    return this.image;
+  }
 
   pruefen() {
-    if (
-      this.option1 === this.$antwort1 &&
-      this.option2 === this.$antwort2 &&
-      this.option3 === this.$antwort3 &&
-      this.option4 === this.$antwort4 &&
-      this.option5 === this.$antwort5 &&
-      this.option6 === this.$antwort6 &&
-      this.option7 === this.$antwort7 &&
-      this.option8 === this.$antwort8 &&
-      this.option9 === this.$antwort9 &&
-      this.option10 === this.$antwort10 &&
-      this.option11 === this.$antwort11 &&
-      this.option12 === this.$antwort12
-    ) {
-      this.router.navigate(['/s2teil5']);
+    if (this.inputWert1+1 === this.$antwort1 &&
+        this.inputWert2+1 === this.$antwort2 &&
+        this.inputWert3+1 === this.$antwort3 &&
+        this.inputWert4+1 === this.$antwort4 &&
+        this.inputWert5+1 === this.$antwort5) {
+      this.router.navigate(['/a2aufgabe5']);
     } else {
       console.log('Dieses Ergebnis ist flasch');
       this.$a++;
@@ -71,6 +78,7 @@ export class A2aufgabe4Component implements OnInit {
       }
     }
   }
+
   toggleHinweis(h: 0 | 1 | 2) {
     this.hinweise[h] = !this.hinweise[h];
   }

@@ -21,7 +21,7 @@ export class A1aufgabe5Component implements OnInit {
   ngOnInit(): void {}
 
   pruefen() {
-    if (this.inputWert === this.$antwort) {
+    if (this.inputWert.toLowerCase().replace(' ', '').replace('ml', '') === this.$antwort) {
       this.router.navigate(['/s1teil6']);
     } else {
       console.log('Dieses Ergebnis ist flasch');

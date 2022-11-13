@@ -13,8 +13,6 @@ import { Aufgabe5Component } from './Aufgaben/aufgabe5/aufgabe5.component';
 import { Aufgabe6Component } from './Aufgaben/aufgabe6/aufgabe6.component';
 import { Aufgabe7Component } from './Aufgaben/aufgabe7/aufgabe7.component';
 import { A1aufgabe1Component } from './Aufgaben1/a1aufgabe1/a1aufgabe1.component';
-import { A1aufgabe7Component } from './Aufgaben1/a1aufgabe7/a1aufgabe7.component';
-import { A1aufgabe6Component } from './Aufgaben1/a1aufgabe6/a1aufgabe6.component';
 import { A1aufgabe5Component } from './Aufgaben1/a1aufgabe5/a1aufgabe5.component';
 import { A1aufgabe4Component } from './Aufgaben1/a1aufgabe4/a1aufgabe4.component';
 import { A1aufgabe3Component } from './Aufgaben1/a1aufgabe3/a1aufgabe3.component';
@@ -24,8 +22,6 @@ import { A2aufgabe2Component } from './Aufgaben2/a2aufgabe2/a2aufgabe2.component
 import { A2aufgabe3Component } from './Aufgaben2/a2aufgabe3/a2aufgabe3.component';
 import { A2aufgabe4Component } from './Aufgaben2/a2aufgabe4/a2aufgabe4.component';
 import { A2aufgabe5Component } from './Aufgaben2/a2aufgabe5/a2aufgabe5.component';
-import { A2aufgabe6Component } from './Aufgaben2/a2aufgabe6/a2aufgabe6.component';
-import { A2aufgabe7Component } from './Aufgaben2/a2aufgabe7/a2aufgabe7.component';
 import { Teil1Component } from './_Story/teil1/teil1.component';
 import { Teil2Component } from './_Story/teil2/teil2.component';
 import { Teil3Component } from './_Story/teil3/teil3.component';
@@ -47,8 +43,6 @@ import { S2teil4Component } from './_Story2/s2teil4/s2teil4.component';
 import { S2teil5Component } from './_Story2/s2teil5/s2teil5.component';
 import { S2teil6Component } from './_Story2/s2teil6/s2teil6.component';
 import { S2teil7Component } from './_Story2/s2teil7/s2teil7.component';
-import { A3aufgabe7Component } from './Aufgaben3/a3aufgabe7/a3aufgabe7.component';
-import { A3aufgabe6Component } from './Aufgaben3/a3aufgabe6/a3aufgabe6.component';
 import { A3aufgabe5Component } from './Aufgaben3/a3aufgabe5/a3aufgabe5.component';
 import { A3aufgabe4Component } from './Aufgaben3/a3aufgabe4/a3aufgabe4.component';
 import { A3aufgabe3Component } from './Aufgaben3/a3aufgabe3/a3aufgabe3.component';
@@ -133,14 +127,6 @@ const routes: Routes = [
     component: A1aufgabe5Component
   },
   {
-    path: 'a1aufgabe6',
-    component: A1aufgabe6Component
-  },
-  {
-    path: 'a1aufgabe7',
-    component: A1aufgabe7Component
-  },
-  {
     path: 'a2aufgabe1',
     component: A2aufgabe1Component
   },
@@ -161,14 +147,6 @@ const routes: Routes = [
     component: A2aufgabe5Component
   },
   {
-    path: 'a2aufgabe6',
-    component: A2aufgabe6Component
-  },
-  {
-    path: 'a2aufgabe7',
-    component: A2aufgabe7Component
-  },
-  {
     path: 'a3aufgabe1',
     component: A3aufgabe1Component
   },
@@ -187,14 +165,6 @@ const routes: Routes = [
   {
     path: 'a3aufgabe5',
     component: A3aufgabe5Component
-  },
-  {
-    path: 'a3aufgabe6',
-    component: A3aufgabe6Component
-  },
-  {
-    path: 'a3aufgabe7',
-    component: A3aufgabe7Component
   },
   {
     path: 'storyteil1',
