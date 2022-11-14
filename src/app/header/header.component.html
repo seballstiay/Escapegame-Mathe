@@ -15,17 +15,11 @@
   <a routerLink="/spielregeln" id="Spielregeln" (click)="togglemenu()">
     Spielregeln
   </a>
-  <a routerLink="/spiel-beitreten" id="Spiel beitreten" (click)="togglemenu()">
-    Spiel beitreten
-  </a>
-  <a routerLink="/lehrer-panel" id="Lehrer-Panel" (click)="togglemenu()">
-    Lehrer-Panel
-  </a>
   <a
-    routerLink="/einfuehrung-lehrer"
-    id="Einführung Lehrer"
-    (click)="togglemenu()"
+    routerLink="/spiel-beitreten"
+    id="Spiel beitreten"
+    (click)="reset(); togglemenu()"
   >
-    Einführung Lehrer
+    Spiel beitreten
   </a>
 </div>
