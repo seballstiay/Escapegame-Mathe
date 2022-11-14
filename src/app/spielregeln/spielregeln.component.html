@@ -1,17 +1,33 @@
 <div>
-  <H1> Wähle eine Storyline: </H1>
+  <H1> Wie man spielt: </H1>
 </div>
-<div class="Storycontainer">
-  <button class="story1" (click)="story1()" *ngIf="story1Aktiviert()">
-    <h3>Story 1</h3>
-    <p>Du fliegst durch ein blaues Wurmloch.</p>
-  </button>
-  <button class="story2" (click)="story2()" *ngIf="story2Aktiviert()">
-    <h3>Story 2</h3>
-    <p>Du fliegst durch ein rotes Wurmloch.</p>
-  </button>
-  <button class="story3" (click)="story3()" *ngIf="story3Aktiviert()">
-    <h3>Story 3</h3>
-    <p>Du fliegst durch ein grünes Wurmloch.</p>
-  </button>
+<div class="text">
+  <p>
+    Grundsätzlich muss als erstes entschieden werden, in welcher Parallelwelt
+    man starten möchte.
+  </p>
+  <p>
+    Die meisten Aufgabenseiten benutzen Eingabenfelder. Hierbei müssen die
+    ausgerechneten Lösungen einfach eingetippt werden, um anschließend mit dem
+    Prüfen-Button das Ergebniss auf seine Richtigkeit zu checken.
+  </p>
+  <p>
+    Falls in den Eingabefelder bereits eine Einheit vorgegeben ist, muss diese
+    nicht noch einmal eingegeben werden. Jedoch ist dies ebenso richtig.
+  </p>
+  <p>
+    Neben Eingabefeldern werden ebenso Multiple Choice Aufgaben gestellt.
+    Hierbei müssen nur die Kästchen der Lösungsmöglichkeiten angekreuzt werden,
+    um diese anschließend mit dem Prüfen-Button auf ihre Richtigkeit zu prüfen.
+  </p>
+  <p>
+    Wurden 3 falsche Eingaben getätigt, erhalten die Spieler*innen einen
+    Hinweis. Gelingt es ihnen damit nicht das richtige Ergebniss herauszufinden,
+    werden weitere Hinweise aufgedeckt.
+  </p>
+  <p>
+    Ziel des Spieles ist es, so wenig Hinweise wie möglich zu verwenden und so
+    schnell wie möglich wieder zurück nach Hause zu gelangen. Die Anzahl der
+    Hinweise kann am Ende abgelesen werden.
+  </p>
 </div>

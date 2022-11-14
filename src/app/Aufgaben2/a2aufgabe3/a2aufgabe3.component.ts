@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
+import { HinweisService } from 'src/app/hinweis.service';
 @Component({
   selector: 'app-a2aufgabe3',
   templateUrl: './a2aufgabe3.component.html',
   styleUrls: ['./a2aufgabe3.component.scss']
 })
 export class A2aufgabe3Component implements OnInit {
-  constructor(private router: Router) {}
+  constructor(private router: Router, public hinweisService: HinweisService) {}
 
   $a = 0;
   inputWert = '';
@@ -21,10 +22,12 @@ export class A2aufgabe3Component implements OnInit {
   ngOnInit(): void {}
 
   pruefen() {
-    if (this.inputWert.toLowerCase().replace(' ', '').replace('cm', '') === this.$antwort) {
+    if (
+      this.inputWert.toLowerCase().replace(' ', '').replace('cm', '') ===
+      this.$antwort
+    ) {
       this.router.navigate(['/s2teil4']);
-    } 
-    else {
+    } else {
       console.log('Dieses Ergebnis ist flasch');
       this.$a++;
       const a = this.$a - 3;
@@ -36,6 +39,7 @@ export class A2aufgabe3Component implements OnInit {
   }
 
   toggleHinweis(h: 0 | 1 | 2) {
+    this.hinweisService.hinweise.next(this.hinweisService.hinweise.value + 1);
     this.hinweise[h] = !this.hinweise[h];
   }
 

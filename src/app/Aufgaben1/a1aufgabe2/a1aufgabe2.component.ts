@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
+import { HinweisService } from 'src/app/hinweis.service';
 @Component({
   selector: 'app-a1aufgabe2',
   templateUrl: './a1aufgabe2.component.html',
   styleUrls: ['./a1aufgabe2.component.scss']
 })
 export class A1aufgabe2Component implements OnInit {
-  constructor(private router: Router) {}
+  constructor(private router: Router, public hinweisService: HinweisService) {}
 
   $a = 0;
   inputWert = '';
@@ -35,6 +36,7 @@ export class A1aufgabe2Component implements OnInit {
   }
 
   toggleHinweis(h: 0 | 1 | 2) {
+    this.hinweisService.hinweise.next(this.hinweisService.hinweise.value + 1);
     this.hinweise[h] = !this.hinweise[h];
   }
 
