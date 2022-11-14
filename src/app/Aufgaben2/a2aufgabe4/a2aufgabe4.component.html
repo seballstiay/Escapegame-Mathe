@@ -8,30 +8,62 @@
   Code komplett und funktionstüchtig zu machen, müssen die Ergebnisse für x, der
   5 Gleichungen, im fehlenden Teil des QR Codes schwarz ausgemalt werden.
 </div>
-<div class = "Parent">
-  <div class="Bild">
-    <img [src]="image" alt="" />
-  </div>
-  <div class="Eingaben">
-    <div class="Eingabe">
-      <input type="text" [(ngModel)]="inputWert1" (ngModelChange)="bildW()" placeholder="Lösung 1" />
-      <button (click)="pruefen()" hidden>Prüfen</button>
+<div class="Parent">
+  <div class="container">
+    <div class="angabenbild">
+      <img src="../../../assets/images/W2_A4_Angabe.png" alt="" />
     </div>
-    <div class="Eingabe">
-      <input type="text" [(ngModel)]="inputWert2" (ngModelChange)="bildW()" placeholder="Lösung 2" />
-      <button (click)="pruefen()" hidden>Prüfen</button>
+    <div class="Eingaben">
+      <div class="Eingabe">
+        <input
+          type="text"
+          [(ngModel)]="inputWert1"
+          (ngModelChange)="bildW()"
+          placeholder="Lösung 1"
+        />
+        <button (click)="pruefen()" hidden>Prüfen</button>
+      </div>
+      <div class="Eingabe">
+        <input
+          type="text"
+          [(ngModel)]="inputWert2"
+          (ngModelChange)="bildW()"
+          placeholder="Lösung 2"
+        />
+        <button (click)="pruefen()" hidden>Prüfen</button>
+      </div>
+      <div class="Eingabe">
+        <input
+          type="text"
+          [(ngModel)]="inputWert3"
+          (ngModelChange)="bildW()"
+          placeholder="Lösung 3"
+        />
+        <button (click)="pruefen()" hidden>Prüfen</button>
+      </div>
+      <div class="Eingabe">
+        <input
+          type="text"
+          [(ngModel)]="inputWert4"
+          (ngModelChange)="bildW()"
+          placeholder="Lösung 4"
+        />
+        <button (click)="bildW()" hidden>Zeichnen</button>
+      </div>
+      <div class="Eingabe">
+        <input
+          type="text"
+          [(ngModel)]="inputWert5"
+          (ngModelChange)="bildW()"
+          placeholder="Lösung 5"
+        />
+      </div>
+      <div class="pruefen">
+        <button (click)="pruefen()">Prüfen</button>
+      </div>
     </div>
-    <div class="Eingabe">
-      <input type="text" [(ngModel)]="inputWert3" (ngModelChange)="bildW()" placeholder="Lösung 3" />
-      <button (click)="pruefen()" hidden>Prüfen</button>
-    </div>
-    <div class="Eingabe">
-      <input type="text" [(ngModel)]="inputWert4" (ngModelChange)="bildW()" placeholder="Lösung 4" />
-      <button (click)="bildW()" hidden>Zeichnen</button>
-    </div>
-    <div class="Eingabe">
-      <input type="text" [(ngModel)]="inputWert5"  (ngModelChange)="bildW()" placeholder="Lösung 5" />
-      <button (click)="pruefen()">Prüfen</button>
+    <div class="Bild">
+      <img [src]="image" alt="" />
     </div>
   </div>
 </div>
@@ -40,19 +72,17 @@
   <div class="hinweis" [ngClass]="getClasses(0)">
     <h3>Hinweis 1</h3>
     <p>
-      Setze beide Seiten der Waage in einer Gleichung gleich. Eine Seite der
-      Waage entspricht einer Seite der Gleichung.
+      Bewegt immer alle Teile, die ein x enthalten auf eine Seite und die Teile
+      ohne x auf die andere Seite.
     </p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(1)">
     <h3>Hinweis 2</h3>
-    <p>Lachen ist/sind x g und Liebe ist 1g. Erweitere deine Gleichung!</p>
+    <p>Entfernt nun noch Faktoren damit nur <br />x = … dasteht.</p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
     <h3>Hinweis 3</h3>
-    <p>
-      Die Gleichung ist 10x + 3 = 8x + 9, führe die Äquivalenzumformung durch!
-    </p>
+    <p>x1 = 7, x2 = 4, x3 = 5, x4 = 1, x5 = 9</p>
   </div>
 </div>
 <app-navigation-aufgaben [showNextButton]="false"></app-navigation-aufgaben>
