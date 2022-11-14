@@ -23,7 +23,7 @@ export class A3aufgabe3Component implements OnInit {
 
   pruefen() {
     if (this.inputWert?.toLowerCase().replace(/ /g, '') === this.$antwort) {
-      this.router.navigate(['/s3teil5']);
+      this.router.navigate(['/s3teil4']);
     } else {
       console.log('Dieses Ergebnis ist falsch');
       this.$a++;
