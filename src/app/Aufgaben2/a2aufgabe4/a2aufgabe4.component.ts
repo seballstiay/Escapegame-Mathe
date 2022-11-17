@@ -86,7 +86,7 @@ export class A2aufgabe4Component implements OnInit {
       this.inputWert4 === this.$antwort4 &&
       this.inputWert5 === this.$antwort5
     ) {
-      this.router.navigate(['/a2aufgabe5']);
+      this.router.navigate(['/s2teil4']);
     } else {
       console.log('Dieses Ergebnis ist flasch');
       this.antwort1falsch = false;
