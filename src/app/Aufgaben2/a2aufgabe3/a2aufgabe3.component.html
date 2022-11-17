@@ -63,7 +63,13 @@ Checkbox für mehrere Richtige Antwortmöglichkeiten
   </div>
 -->
   <div class="Eingabe">
-    <input type="text" [(ngModel)]="inputWert" placeholder="Lösung in cm" />
+    <input
+      type="text"
+      [(ngModel)]="inputWert"
+      (ngModelChange)="eingabefalsch = false"
+      [ngClass]="{ falscherWert: eingabefalsch }"
+      placeholder="Lösung in cm"
+    />
     <button (click)="pruefen()">Prüfen</button>
   </div>
 </div>
@@ -81,11 +87,8 @@ Checkbox für mehrere Richtige Antwortmöglichkeiten
     <p><img class="Bild4" src="\assets\images\W2_A3_Tipp2_F1.png" alt="" /></p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
-    <h3>Hinweis 3</h3>
-    <p>
-      r muss ungefähr 105cm groß sein damit das Volumen gleichbleibt. (Feld 2
-      ist richtig)
-    </p>
+    <h3>Lösung</h3>
+    <p>r muss ungefähr 105cm groß sein damit das Volumen gleichbleibt.</p>
   </div>
 </div>
 <app-navigation-aufgaben [showNextButton]="false"></app-navigation-aufgaben>

@@ -9,7 +9,13 @@
   Dreiecke in der Figur versteckt sind.
 </div>
 <div class="Eingabe">
-  <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
+  <input
+    type="text"
+    [(ngModel)]="inputWert"
+    (ngModelChange)="eingabefalsch = false"
+    [ngClass]="{ falscherWert: eingabefalsch }"
+    placeholder="Lösung"
+  />
   <button (click)="pruefen()">Prüfen</button>
 </div>
 <div class="hinweisContainer">
@@ -22,8 +28,11 @@
     <p>Die Anzahl der großen und mittleren ist gleich.</p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
-    <h3>Hinweis 3</h3>
-    <p>Es sind 8 kleine, 4 mittlere und 4 große Dreiecke.</p>
+    <h3>Lösung</h3>
+    <p>
+      Es sind 8 kleine, 4 mittlere und 4 große Dreiecke.<br />Somit sind 16
+      Dreiecke versteckt.
+    </p>
   </div>
 </div>
 <app-navigation-aufgaben [showNextButton]="false"></app-navigation-aufgaben>

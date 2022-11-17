@@ -10,16 +10,19 @@
   müsst ihr für b Taschen, wo eure Wertsachen sind, y Euro zahlen. Für c Handys,
   die ihr dabei habt, müsst ihr noch zusätzlich z Euro zahlen. Ihr seid 3
   Personen und habt 3,5 Handys dabei (ein Handy ist kaputt und zählt nur halb).
-  Eine Tasche mitnehmen kostet 10 Euro. Stellt einen Term mit möglichst wenigen
-  Variablen auf, damit der Hauswirt die Kosten schneller berechnen kann!
-  (Hinweis: Der Term muss in der Reihenfolge, wie im Text angegeben werden und
-  die Anzahl muss vor dem Betrag stehen.)<br />
+  Eine Tasche mitnehmen kostet 10 Euro. <br />
   Stellt einen Term mit möglichst wenigen Variablen auf, damit der Hauswirt die
-  Kosten schneller berechnen kann! (Hinweis: Der Term muss in der Reihenfolge,
-  wie im Text angegeben werden und die Anzahl muss vor dem Betrag stehen.)
+  Kosten schneller berechnen kann! (Hinweis: Der Faktor muss immer vor den
+  Variabeln stehen.)
 </div>
 <div class="Eingabe">
-  <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
+  <input
+    type="text"
+    [(ngModel)]="inputWert"
+    (ngModelChange)="eingabefalsch = false"
+    [ngClass]="{ falscherWert: eingabefalsch }"
+    placeholder="Lösung"
+  />
 
   <button (click)="pruefen()">Prüfen</button>
 </div>
@@ -35,8 +38,8 @@
     <p>Grundform: ax + by + cz</p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
-    <h3>Hinweis 3</h3>
-    <p>Kosten = 3x + 10b + 3,5z</p>
+    <h3>Lösung</h3>
+    <p>Kosten = 3x + 10y + 3,5z</p>
   </div>
 </div>
 <app-navigation-aufgaben [showNextButton]="false"></app-navigation-aufgaben>

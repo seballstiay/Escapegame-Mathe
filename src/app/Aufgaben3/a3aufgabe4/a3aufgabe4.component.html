@@ -10,12 +10,18 @@
   müssen die Verratenen eine Strafe von 400 € bezahlen und der Verräter kommt
   ohne Strafe davon. Wenn sich allerdings alle Personen gegenseitig verraten,
   müssen sie alle 400 € bezahlen. Eure Mitspieler hatten keine Gelegenheit sich
-  abzuspre-chen. Sie wissen, dass am Ende das gesamte Team für ihre Strafe
-  aufkommen wird und möchten des-halb ihre gesamte Strafzahlung so gering wie
+  abzusprechen. Sie wissen, dass am Ende das gesamte Team für ihre Strafe
+  aufkommen wird und möchten deshalb ihre gesamte Strafzahlung so gering wie
   möglich halten. Wie viel müsst ihr Zahlen, wenn sich alle richtig verhalten?
 </div>
 <div class="Eingabe">
-  <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
+  <input
+    type="text"
+    [(ngModel)]="inputWert"
+    (ngModelChange)="eingabefalsch = false"
+    [ngClass]="{ falscherWert: eingabefalsch }"
+    placeholder="Lösung"
+  />
   <button (click)="pruefen()">Prüfen</button>
 </div>
 <div class="hinweisContainer">
@@ -28,17 +34,19 @@
   </div>
   <div class="hinweis" [ngClass]="getClasses(1)">
     <h3>Hinweis 2</h3>
-    <p>Es gibt 3 Möglickeiten.</p>
+    <p>
+      Es gibt 3 Möglickeiten.<br />
+      Beide verraten einander.<br />
+      Einer verrät den anderen, der andere nicht.<br />
+      Beide verraten sich.
+    </p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
-    <h3>Hinweis 3</h3>
+    <h3>Lösung</h3>
     <p>
-      Wenn sich die beiden nicht verraten müssen sie zusammen 200 € (jeder 100
-      €) bezahlen.<br />
-      Wenn einer den anderen verrät und dieser den anderen nicht müssen sie 0€ +
-      400 € also 400 € bezahlen.<br />
-      Wenn sie sich aus Versehen beide verraten, zahlen sie 800 €. Somit sollten
-      sich die beiden Mitspieler nicht verraten! = 200€ Strafe
+      Am günstigsten wird abgeschnitten, wenn sich beide nicht verraten.
+      <br /><br />
+      Insgesamte Strafe in Höhe von 200€.
     </p>
   </div>
 </div>

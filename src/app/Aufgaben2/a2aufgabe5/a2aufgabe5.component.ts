@@ -25,7 +25,16 @@ export class A2aufgabe5Component implements OnInit {
   $antwort3 = '3';
   $antwort4 = '15';
 
-  ngOnInit(): void {}
+  antwort1falsch = false;
+  antwort2falsch = false;
+  antwort3falsch = false;
+  antwort4falsch = false;
+  ngOnInit(): void {
+    this.antwort1falsch = false;
+    this.antwort2falsch = false;
+    this.antwort3falsch = false;
+    this.antwort4falsch = false;
+  }
 
   pruefen() {
     if (
@@ -36,7 +45,23 @@ export class A2aufgabe5Component implements OnInit {
     ) {
       this.router.navigate(['/s2teil6']);
     } else {
+      this.antwort1falsch = false;
+      this.antwort2falsch = false;
+      this.antwort3falsch = false;
+      this.antwort4falsch = false;
       console.log('Dieses Ergebnis ist flasch');
+      if (this.inputWert1 !== this.$antwort1) {
+        this.antwort1falsch = true;
+      }
+      if (this.inputWert2 !== this.$antwort2) {
+        this.antwort2falsch = true;
+      }
+      if (this.inputWert3 !== this.$antwort3) {
+        this.antwort3falsch = true;
+      }
+      if (this.inputWert4 !== this.$antwort4) {
+        this.antwort4falsch = true;
+      }
       this.$a++;
       const a = this.$a - 3;
 

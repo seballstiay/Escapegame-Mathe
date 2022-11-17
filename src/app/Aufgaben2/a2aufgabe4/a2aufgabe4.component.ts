@@ -39,26 +39,36 @@ export class A2aufgabe4Component implements OnInit {
   $antwort4 = '1';
   $antwort5 = '9';
 
-  ngOnInit(): void {}
+  antwort1falsch = false;
+  antwort2falsch = false;
+  antwort3falsch = false;
+  antwort4falsch = false;
+  antwort5falsch = false;
+
+  ngOnInit(): void {
+    this.antwort1falsch = false;
+    this.antwort2falsch = false;
+    this.antwort3falsch = false;
+    this.antwort4falsch = false;
+    this.antwort5falsch = false;
+  }
+
   bildW() {
+    this.indexI = 0;
+
     if (this.inputWert1 === this.$antwort1) {
-      this.$antwort1 += 1;
       this.indexI = this.indexI + 1;
     }
     if (this.inputWert2 === this.$antwort2) {
-      this.$antwort2 += 1;
       this.indexI = this.indexI + 1;
     }
     if (this.inputWert3 === this.$antwort3) {
-      this.$antwort3 += 1;
       this.indexI = this.indexI + 1;
     }
     if (this.inputWert4 === this.$antwort4) {
-      this.$antwort4 += 1;
       this.indexI = this.indexI + 1;
     }
     if (this.inputWert5 === this.$antwort5) {
-      this.$antwort5 += 1;
       this.indexI = this.indexI + 1;
     }
     this.image = this.images[this.indexI];
@@ -70,15 +80,37 @@ export class A2aufgabe4Component implements OnInit {
 
   pruefen() {
     if (
-      this.inputWert1 + 1 === this.$antwort1 &&
-      this.inputWert2 + 1 === this.$antwort2 &&
-      this.inputWert3 + 1 === this.$antwort3 &&
-      this.inputWert4 + 1 === this.$antwort4 &&
-      this.inputWert5 + 1 === this.$antwort5
+      this.inputWert1 === this.$antwort1 &&
+      this.inputWert2 === this.$antwort2 &&
+      this.inputWert3 === this.$antwort3 &&
+      this.inputWert4 === this.$antwort4 &&
+      this.inputWert5 === this.$antwort5
     ) {
       this.router.navigate(['/a2aufgabe5']);
     } else {
       console.log('Dieses Ergebnis ist flasch');
+      this.antwort1falsch = false;
+      this.antwort2falsch = false;
+      this.antwort3falsch = false;
+      this.antwort4falsch = false;
+      this.antwort5falsch = false;
+
+      if (this.inputWert1 !== this.$antwort1) {
+        this.antwort1falsch = true;
+      }
+      if (this.inputWert2 !== this.$antwort2) {
+        this.antwort2falsch = true;
+      }
+      if (this.inputWert3 !== this.$antwort3) {
+        this.antwort3falsch = true;
+      }
+      if (this.inputWert4 !== this.$antwort4) {
+        this.antwort4falsch = true;
+      }
+      if (this.inputWert5 !== this.$antwort5) {
+        this.antwort5falsch = true;
+      }
+
       this.$a++;
       const a = this.$a - 3;
 

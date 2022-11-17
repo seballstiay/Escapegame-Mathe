@@ -4,37 +4,46 @@
 </div>
 
 <div class="Aufgabentext">
-  In 6 Jahren ist ETs Mutter dreimal so alt wie er und seine Oma neunmal so alt.
-  Die Summe ihrer drei Alter wird dann genau 25987 sein. Wie alt ist ET jetzt
-  gerade?
+  In 6 Jahren ist Franzs Mutter dreimal so alt wie er und seine Oma neunmal so
+  alt. Die Summe ihrer drei Alter wird dann genau 25987 sein. Wie alt ist ET
+  jetzt gerade?
 </div>
 <div class="Eingabe">
-  <input type="text" [(ngModel)]="inputWert" placeholder="Lösung in Jahren" />
+  <input
+    type="text"
+    [(ngModel)]="inputWert"
+    (ngModelChange)="eingabefalsch = false"
+    [ngClass]="{ falscherWert: eingabefalsch }"
+    placeholder="Lösung in Jahren"
+  />
   <button (click)="pruefen()">Prüfen</button>
 </div>
 <div class="hinweisContainer">
   <div class="hinweis" [ngClass]="getClasses(0)">
     <h3>Hinweis 1</h3>
     <p>
-      Nach 6 Jahren ist ET x Jahre alt. Wie alt sind dann Mama und Oma (mit x
-      ausgedrückt)? Wenn du x berechnet hast, vergesse nicht, dass ET erst in 6
-      Jahren x Jahre alt ist.
+      Nach 6 Jahren ist Franz x Jahre alt. Wie alt sind dann Mama und Oma (mit x
+      ausgedrückt)? Wenn du x berechnet hast, vergesse nicht, dass Franz erst in
+      6 Jahren x Jahre alt ist.
     </p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(1)">
     <h3>Hinweis 2</h3>
     <p>
-      Addiere die Teilgleichungen (ETs, Mamas und Omas Alter), setze sie gleich
-      25987 und löse sie auf.
-    </p>
-  </div>
-  <div class="hinweis" [ngClass]="getClasses(2)">
-    <h3>Hinweis 3</h3>
-    <p>
-      Wenn ET in 6 Jahren x Jahre alt ist, ist seine Mutter 3x Jahre alt und
+      Wenn Franz in 6 Jahren x Jahre alt ist, ist seine Mutter 3x Jahre alt und
       seine Oma 9x Jahre. <br />
       x + 3x + 9x = 25987 <br />
       Das Ergebnis musst du noch mit 6 Jahren subtrahieren.
+    </p>
+  </div>
+  <div class="hinweis" [ngClass]="getClasses(2)">
+    <h3>Lösung</h3>
+    <p>
+      x + 3x + 9x = 25987 <br />
+      13x = 25987<br />
+      x = 1999<br />
+      Alter(jetzt) = Alter(in 6 Jahren) – 6 <br />
+      ->Franz ist gerade 1993 Jahre alt!
     </p>
   </div>
 </div>

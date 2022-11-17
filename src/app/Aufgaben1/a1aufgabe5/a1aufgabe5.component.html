@@ -8,7 +8,13 @@
   hinzugeben um eine 1 prozentige Lösung zu erhalten?
 </div>
 <div class="Eingabe">
-  <input type="text" [(ngModel)]="inputWert" placeholder="Lösung in ml" />
+  <input
+    type="text"
+    [(ngModel)]="inputWert"
+    (ngModelChange)="eingabefalsch = false"
+    [ngClass]="{ falscherWert: eingabefalsch }"
+    placeholder="Lösung in ml"
+  />
   <button (click)="pruefen()">Prüfen</button>
 </div>
 <div class="hinweisContainer">
@@ -16,19 +22,22 @@
     <h3>Hinweis 1</h3>
     <p>
       Das Produkt aus Ausgangvolumen und Ausgangkonzentration muss das selbe
-      ergeben wie das Produkt aus Endvolumen und Endkonzentration.
+      ergeben wie das Produkt aus Endvolumen und Endkonzentration. <br />
+      Endvolumen = (1+x)
     </p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(1)">
     <h3>Hinweis 2</h3>
-    <p>
-      Das Endvolumen ist die Summe aus dem Ausgangvolumen 1ml und einer
-      unbekannten Menge an Wasser x. E = (1+x)
-    </p>
+    <p>Stellt folgende Gleichung auf: 1 × 1ml = (1+x) × 1ml</p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
-    <h3>Hinweis 3</h3>
-    <p>Stellt folgende Gleichung auf: 1 × 1ml = (1+x) × 1ml</p>
+    <h3>Lösung</h3>
+    <p>
+      1 × 0,1 = (1+x) × 0,01 <br />
+      0,1 = 0,01 + 0,01x<br />
+      0,01x = 0,09<br />
+      x = 9 <br />-> 9 ml Wasser sind notwendig.
+    </p>
   </div>
 </div>
 <app-navigation-aufgaben [showNextButton]="false"></app-navigation-aufgaben>

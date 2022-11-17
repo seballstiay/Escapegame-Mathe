@@ -18,8 +18,10 @@ export class A3aufgabe4Component implements OnInit {
   };
   //Hier kommt das richtige Ergebnis der Aufgabe hin
   $antwort = '200';
-
-  ngOnInit(): void {}
+  eingabefalsch = false;
+  ngOnInit(): void {
+    this.eingabefalsch = false;
+  }
 
   pruefen() {
     if (
@@ -29,6 +31,7 @@ export class A3aufgabe4Component implements OnInit {
       this.router.navigate(['/s3teil5']);
     } else {
       console.log('Dieses Ergebnis ist flasch');
+      this.eingabefalsch = true;
       this.$a++;
       const a = this.$a - 3;
 

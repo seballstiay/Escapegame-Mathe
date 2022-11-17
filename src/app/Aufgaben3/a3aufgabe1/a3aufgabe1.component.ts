@@ -20,8 +20,10 @@ export class A3aufgabe1Component implements OnInit {
   $antwort = 'see';
   $antwort1 = 'see';
   $antwort2 = 'See ';
-
-  ngOnInit(): void {}
+  eingabefalsch = false;
+  ngOnInit(): void {
+    this.eingabefalsch = false;
+  }
 
   pruefen() {
     if (
@@ -32,6 +34,7 @@ export class A3aufgabe1Component implements OnInit {
       this.router.navigate(['/s3teil2']);
     } else {
       console.log('Dieses Ergebnis ist flasch');
+      this.eingabefalsch = true;
       this.$a++;
       const a = this.$a - 3;
 

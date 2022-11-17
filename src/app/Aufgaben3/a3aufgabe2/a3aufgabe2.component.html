@@ -4,28 +4,37 @@
 </div>
 
 <div class="Aufgabentext">
-  Ihre Aufgabe lautet: „Wenn es noch einmal so viele Wesen wären wie ich besitze
+  Ihre Aufgabe lautet: „Wenn es doppelt so viele Wesen wären, wie ich besitze
   und dazu noch einmal die Hälfte der Hälfte davon, dann hätte ich 100 Drachen.
   Na los, Fremde, könnt ihr mir sagen wie viele Drachen ich besitze?”
 </div>
 <div class="Eingabe">
-  <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
+  <input
+    type="text"
+    [(ngModel)]="inputWert"
+    (ngModelChange)="eingabefalsch = false"
+    [ngClass]="{ falscherWert: eingabefalsch }"
+    placeholder="Lösung"
+  />
   <button (click)="pruefen()">Prüfen</button>
 </div>
 <div class="hinweisContainer">
   <div class="hinweis" [ngClass]="getClasses(0)">
     <h3>Hinweis 1</h3>
-    <p>Stellt erst eine Gleichung auf, die das Rätsel nachbildet.</p>
+    <p>
+      Stellt erst eine Gleichung auf, die das Rätsel nachbildet und löse diese
+      anschließend nach x auf. <br />(x ist die Anzahl der Drachen)
+    </p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(1)">
     <h3>Hinweis 2</h3>
-    <p>Stelle die Gleichung nach x um (x ist die Anzahl der Drachen)</p>
-  </div>
-  <div class="hinweis" [ngClass]="getClasses(2)">
-    <h3>Hinweis 3</h3>
     <p>
       <img class="hinweisbild" src="\assets\images\W3_A2_Lösung.png" alt="" />
     </p>
+  </div>
+  <div class="hinweis" [ngClass]="getClasses(2)">
+    <h3>Lösung</h3>
+    <p>Die Frau besitzt 40 Drachen.</p>
   </div>
 </div>
 <app-navigation-aufgaben [showNextButton]="false"></app-navigation-aufgaben>

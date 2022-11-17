@@ -9,24 +9,35 @@
   der kleinsten Primzahl. Wie lautet das Passwort?
 </div>
 <div class="Eingabe">
-  <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
+  <input
+    type="text"
+    [(ngModel)]="inputWert"
+    (ngModelChange)="eingabefalsch = false"
+    [ngClass]="{ falscherWert: eingabefalsch }"
+    placeholder="Lösung"
+  />
   <button (click)="pruefen()">Prüfen</button>
 </div>
 <div class="hinweisContainer">
   <div class="hinweis" [ngClass]="getClasses(0)">
     <h3>Hinweis 1</h3>
-    <p>
-      Die kleinste Primzahl(= Zahl die größer als 1 ist und nur durch 1 und sich
-      selbst teilbar ist) ist 2
-    </p>
+    <p>Die kleinste Primzahl ist 2</p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(1)">
     <h3>Hinweis 2</h3>
-    <p>Die Quersumme ist X + Y + X + Y = 2X + 2Y = 12 · 2 = 24</p>
+    <p>
+      Die Quersumme ist: <br />
+      X + Y + X + Y = 2X + 2Y = 12 · 2 = 24<br />
+      Ersetze Y durch 2X und löse die Gleichung nach X auf.
+    </p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
-    <h3>Hinweis 3</h3>
-    <p>Ersetze Y durch 2X und löse die Gleichung nach X auf</p>
+    <h3>Lösung</h3>
+    <p>
+      2X+ 4X = 24<br />
+      6X = 24 --> X = 4 <br />Y = 2X = 8<br />
+      --> Code: 4848
+    </p>
   </div>
 </div>
 <app-navigation-aufgaben [showNextButton]="false"></app-navigation-aufgaben>

@@ -18,6 +18,8 @@
         <input
           type="text"
           [(ngModel)]="inputWert1"
+          (ngModelChange)="antwort1falsch = false"
+          [ngClass]="{ falscherWert: antwort1falsch }"
           (ngModelChange)="bildW()"
           placeholder="Lösung 1"
         />
@@ -27,6 +29,8 @@
         <input
           type="text"
           [(ngModel)]="inputWert2"
+          (ngModelChange)="antwort2falsch = false"
+          [ngClass]="{ falscherWert: antwort2falsch }"
           (ngModelChange)="bildW()"
           placeholder="Lösung 2"
         />
@@ -36,6 +40,8 @@
         <input
           type="text"
           [(ngModel)]="inputWert3"
+          (ngModelChange)="antwort3falsch = false"
+          [ngClass]="{ falscherWert: antwort3falsch }"
           (ngModelChange)="bildW()"
           placeholder="Lösung 3"
         />
@@ -45,6 +51,8 @@
         <input
           type="text"
           [(ngModel)]="inputWert4"
+          (ngModelChange)="antwort4falsch = false"
+          [ngClass]="{ falscherWert: antwort4falsch }"
           (ngModelChange)="bildW()"
           placeholder="Lösung 4"
         />
@@ -54,6 +62,8 @@
         <input
           type="text"
           [(ngModel)]="inputWert5"
+          (ngModelChange)="antwort5falsch = false"
+          [ngClass]="{ falscherWert: antwort5falsch }"
           (ngModelChange)="bildW()"
           placeholder="Lösung 5"
         />
@@ -81,7 +91,7 @@
     <p>Entfernt nun noch Faktoren damit nur <br />x = … dasteht.</p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
-    <h3>Hinweis 3</h3>
+    <h3>Lösung</h3>
     <p>x1 = 7, x2 = 4, x3 = 5, x4 = 1, x5 = 9</p>
   </div>
 </div>

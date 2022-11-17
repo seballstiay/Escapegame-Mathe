@@ -30,7 +30,10 @@ h1 {
     height: auto;
   }
 }
-
+.falscherWert {
+  border-color: red;
+  background-color: rgba(255, 0, 0, 0.286);
+}
 .Eingabe {
   flex: 1;
   justify-content: center;

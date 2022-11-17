@@ -11,26 +11,36 @@ export class A2aufgabe2Component implements OnInit {
 
   $a = 0;
   inputWertSmall = '';
-  inputWertBig = '';
+  inputWertMittel = '';
   hinweise = {
     0: false,
     1: false,
     2: false
   };
   //Hier kommt das richtige Ergebnis der Aufgabe hin
-  $antwortBig = '3';
+  $antwortMittel = '3';
   $antwortSmall = '2';
-
-  ngOnInit(): void {}
+  eingabe1falsch = false;
+  eingabe2falsch = false;
+  ngOnInit(): void {
+    this.eingabe1falsch = false;
+    this.eingabe2falsch = false;
+  }
 
   pruefen() {
     if (
       this.inputWertSmall === this.$antwortSmall &&
-      this.inputWertBig === this.$antwortBig
+      this.inputWertMittel === this.$antwortMittel
     ) {
       this.router.navigate(['/s2teil3']);
     } else {
       console.log('Dieses Ergebnis ist flasch');
+      if (this.inputWertSmall !== this.$antwortSmall) {
+        this.eingabe1falsch = true;
+      }
+      if (this.inputWertMittel !== this.$antwortMittel) {
+        this.eingabe2falsch = true;
+      }
       this.$a++;
       const a = this.$a - 3;
 

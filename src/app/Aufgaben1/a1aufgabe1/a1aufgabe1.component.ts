@@ -18,15 +18,22 @@ export class A1aufgabe1Component implements OnInit {
   };
   //Hier kommt das richtige Ergebnis der Aufgabe hin
   $antwort = '2';
-  
 
-  ngOnInit(): void {}
+  eingabefalsch = false;
+
+  ngOnInit(): void {
+    this.eingabefalsch = false;
+  }
 
   pruefen() {
-    if (this.inputWert.toLowerCase().replace(' ','').replace('g','') === this.$antwort) {
+    if (
+      this.inputWert.toLowerCase().replace(' ', '').replace('g', '') ===
+      this.$antwort
+    ) {
       this.router.navigate(['/s1teil2']);
     } else {
       console.log('Dieses Ergebnis ist falsch');
+      this.eingabefalsch = true;
       this.$a++;
       const a = this.$a - 3;
 

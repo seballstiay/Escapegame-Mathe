@@ -18,14 +18,18 @@ export class A2aufgabe1Component implements OnInit {
   };
   //Hier kommt das richtige Ergebnis der Aufgabe hin
   $antwort = '16';
+  eingabefalsch = false;
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.eingabefalsch = false;
+  }
 
   pruefen() {
     if (this.inputWert === this.$antwort) {
       this.router.navigate(['/s2teil2']);
     } else {
       console.log('Dieses Ergebnis ist flasch');
+      this.eingabefalsch = true;
       this.$a++;
       const a = this.$a - 3;
 

@@ -9,27 +9,34 @@
   Tortenstücke könnt ihr euch noch kaufen?
 </div>
 <div class="Eingabe">
-  <input type="text" [(ngModel)]="inputWert" placeholder="Lösung" />
+  <input
+    type="text"
+    [(ngModel)]="inputWert"
+    (ngModelChange)="eingabefalsch = false"
+    [ngClass]="{ falscherWert: eingabefalsch }"
+    placeholder="Lösung"
+  />
   <button (click)="pruefen()">Prüfen</button>
 </div>
 <div class="hinweisContainer">
   <div class="hinweis" [ngClass]="getClasses(0)">
     <h3>Hinweis 1</h3>
+    <p>Ihr könnt x Tortenstücke kaufen.</p>
+  </div>
+  <div class="hinweis" [ngClass]="getClasses(1)">
+    <h3>Hinweis 2</h3>
     <p>
       Der Preis von x Tortenstücke und 4 Algen zusammen addiert muss gleich 11 €
       gesetzt werden.
     </p>
   </div>
-  <div class="hinweis" [ngClass]="getClasses(1)">
-    <h3>Hinweis 2</h3>
+  <div class="hinweis" [ngClass]="getClasses(2)">
+    <h3>Lösung</h3>
     <p>
       0,5 € · 4 + 1,80 € · x = 11€ <br />
       1,80 € · x = 9€ <br />
+      x = 5
     </p>
-  </div>
-  <div class="hinweis" [ngClass]="getClasses(2)">
-    <h3>Hinweis 3</h3>
-    <p>x = 5</p>
   </div>
 </div>
 <app-navigation-aufgaben [showNextButton]="false"></app-navigation-aufgaben>

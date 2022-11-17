@@ -17,15 +17,29 @@ export class A3aufgabe3Component implements OnInit {
     2: false
   };
   //Hier kommt das richtige Ergebnis der Aufgabe hin
-  $antwort = '3x+10b+3,5z';
+  $antwort = '3x+10y+3,5z';
+  /* 
+  x3+10b+3,5z
+  x3+10b+z3,5
+  x3+b10+3,5z
+  x3+b10+z3,5
 
-  ngOnInit(): void {}
+  3x+b10+3,5z
+  x3+b10+3,5z
+  
+
+  */
+  eingabefalsch = false;
+  ngOnInit(): void {
+    this.eingabefalsch = false;
+  }
 
   pruefen() {
     if (this.inputWert?.toLowerCase().replace(/ /g, '') === this.$antwort) {
       this.router.navigate(['/s3teil4']);
     } else {
       console.log('Dieses Ergebnis ist falsch');
+      this.eingabefalsch = true;
       this.$a++;
       const a = this.$a - 3;
 

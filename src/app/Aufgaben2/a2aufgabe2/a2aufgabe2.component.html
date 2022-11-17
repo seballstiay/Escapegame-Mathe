@@ -6,18 +6,23 @@
 <div class="Aufgabentext">
   Ihr habt ein Problem, wie könnt ihr die Flasche exakt 9 Minuten am Hahn lassen
   und die Zeit dabei stoppen. Überlegt euch wie ihr vorgehen müsst und gebt an
-  wie oft ihr die kleine Sanduhr und wie oft ihr die große Sanduhr drehen müsst.
+  wie oft ihr die kleine Sanduhr und wie oft ihr die mittlere Sanduhr drehen
+  müsst.
 </div>
 <div class="Eingabe">
   <input
     type="text"
     [(ngModel)]="inputWertSmall"
+    (ngModelChange)="eingabe1falsch = false"
+    [ngClass]="{ falscherWert: eingabe1falsch }"
     placeholder="Anzahl kleine Sanduhr"
   />
   <input
     type="text"
-    [(ngModel)]="inputWertBig"
-    placeholder="Anzahl große Sanduhr"
+    [(ngModel)]="inputWertMittel"
+    (ngModelChange)="eingabe2falsch = false"
+    [ngClass]="{ falscherWert: eingabe2falsch }"
+    placeholder="Anzahl mittlere Sanduhr"
   />
   <button (click)="pruefen()">Prüfen</button>
 </div>
@@ -30,15 +35,15 @@
     <h3>Hinweis 2</h3>
     <p>
       Ihr kommt mit der kleinen Sanduhr auf 8 Minuten. Nun braucht ihr noch eine
-      Minute: Baut dafür die große Sanduhr mit ein.
+      Minute: Baut dafür die mittlere Sanduhr mit ein.
     </p>
   </div>
   <div class="hinweis" [ngClass]="getClasses(2)">
-    <h3>Hinweis 3</h3>
+    <h3>Lösung</h3>
     <p>
       Beide Sanduhren werden umgedreht. Nach 4 Minuten wird die kleine erneut
       umgedreht. Nach sieben Minuten wird die große wieder gedreht. Nach 8
-      Minuten braucht ihr die Kleine nicht mehr. Die große dagegen ist jetzt
+      Minuten braucht ihr die mittlere nicht mehr. Die große dagegen ist jetzt
       eine Minute gelaufen, diese dreht ihr wieder um und wartet die Minute ab.
     </p>
   </div>
