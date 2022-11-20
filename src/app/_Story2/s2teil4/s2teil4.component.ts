@@ -12,7 +12,7 @@ export class S2teil4Component implements OnInit {
   ngOnInit(): void {}
 
   weiter() {
-    this.router.navigate(['/a2aufgabe5']);
+    this.router.navigate(['/a2aufgabe4']);
   }
   back() {
     this.location.back();

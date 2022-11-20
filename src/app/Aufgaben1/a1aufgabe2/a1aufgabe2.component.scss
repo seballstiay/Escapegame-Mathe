@@ -8,10 +8,10 @@ h1 {
 }
 
 .Bild {
-  width: 100%;
+  max-width: 100%;
   text-align: center;
   img {
-    width: 17%;
+    max-width: 10rem;
     height: auto;
   }
 }
