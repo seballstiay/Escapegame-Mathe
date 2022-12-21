@@ -18,19 +18,14 @@ export class A3aufgabe1Component implements OnInit {
   };
   //Hier kommt das richtige Ergebnis der Aufgabe hin
   $antwort = 'see';
-  $antwort1 = 'see';
-  $antwort2 = 'See ';
+
   eingabefalsch = false;
   ngOnInit(): void {
     this.eingabefalsch = false;
   }
 
   pruefen() {
-    if (
-      this.inputWert === this.$antwort ||
-      this.inputWert === this.$antwort1 ||
-      this.inputWert === this.$antwort2
-    ) {
+    if (this.inputWert?.toLowerCase().replace(/ /g, '') === this.$antwort) {
       this.router.navigate(['/s3teil2']);
     } else {
       console.log('Dieses Ergebnis ist flasch');
